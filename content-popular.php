@@ -1,0 +1,30 @@
+<?php
+
+global $wp_query;
+
+$city = afdm_get_user_city();
+
+$popular_query = afdm_get_popular_query();
+
+$query = array_merge($wp_query->query, $popular_query);
+
+query_posts($query);
+
+if(have_posts()) :
+	?>
+
+	<div class="child-section">
+		<!-- <div class="section-title featured">
+			<?php if($city && !get_query_var('city_not_found')) : ?>
+				<h2><?php _e('Popular in', 'arteforadomuseu'); ?> <?php echo $city; ?></h2>
+			<?php else : ?>
+				<h2><?php _e('Popular', 'arteforadomuseu'); ?></h2>
+			<?php endif; ?>
+		</div> -->
+			<?php get_template_part('loop', 'carousel'); ?>
+	</div>
+
+<?php
+endif;
+wp_reset_query();
+?>

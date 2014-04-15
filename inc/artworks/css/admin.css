@@ -1,0 +1,20 @@
+.loop-box .box-inputs {
+	margin: 20px 0 10px;
+	clear: both;
+	display: block;
+}
+
+.loop-box ul li {
+	width: 100%;
+	display: block;
+	margin: 0 0 10px;
+	clear: both;
+}
+
+.loop-box ul li p {
+	float: left;
+	margin: 0 20px 0 0;
+}
+.loop-box .box-inputs input[type=text] {
+	width: 100%;
+}
