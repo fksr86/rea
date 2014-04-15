@@ -635,6 +635,7 @@ class ArteForaDoMuseu_Artists {
 						<div class="form-inputs">
 							<h3><?php _e('Countries', 'arteforadomuseu'); ?></h3>
 							<select class="artists" name="post_id">
+								<option></option>
 								<?php foreach($artists as $artist) : ?>
 									<option value="<?php echo $artist->ID; ?>"><?php echo $artist->post_title; ?></option>
 								<?php endforeach; ?>

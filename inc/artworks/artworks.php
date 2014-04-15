@@ -57,6 +57,9 @@ class ArteForaDoMuseu_Artworks {
 	function setup_scripts() {
 		add_action('wp_enqueue_scripts', array($this, 'scripts'));
 		add_action('jeo_geocode_scripts', array($this, 'geocode_scripts'));
+
+		//++ Adds advanced search query to default query
+		add_action('pre_get_posts', array($this, 'advanced_search_query'));
 	}
 
 	function scripts() {
@@ -700,8 +703,8 @@ class ArteForaDoMuseu_Artworks {
 			$interface_languages = $this->get_artwork_interface_languages();
 			$resource_languages = $this->get_artwork_resource_languages();
 		}
-
 		?>
+
 		<div id="artwork_languages_box" class="loop-box">
 			<div class="half-1">
 				<h4><?php _e('Interface languages', 'arteforadomuseu'); ?></h4>
@@ -1052,7 +1055,7 @@ class ArteForaDoMuseu_Artworks {
 		<div id="artwork_categories_box">
 			<h4><?php _e('Select a category', 'arteforadomuseu'); ?></h4>
 			<div class="box-inputs">
-				<select id="artwork_categories_select" name="categories">
+				<select id="artwork_categories_select" name="category_name">
 					<option></option>
 					<?php foreach($categories as $category) : ?>
 						<option value="<?php echo $category->slug; ?>" <?php if($category->term_id == $category_id) echo 'selected'; ?>><?php echo $category->name; ?></option>
@@ -1065,8 +1068,8 @@ class ArteForaDoMuseu_Artworks {
 
 	function save_artwork_categories($post_id) {
 
-		if(isset($_REQUEST['categories'])) {
-			wp_set_object_terms($post_id, $_REQUEST['categories'], 'category');
+		if(isset($_REQUEST['category_name'])) {
+			wp_set_object_terms($post_id, $_REQUEST['category_name'], 'category');
 		}
 
 	}
@@ -1094,7 +1097,7 @@ class ArteForaDoMuseu_Artworks {
 			<?php if($artists) : ?>
 				<h4><?php _e('Select a country', 'arteforadomuseu'); ?></h4>
 				<div class="box-inputs">
-					<select class="artists" name="country">
+					<select class="artists" name="artwork_country">
 						<option></option>
 						<?php foreach($artists as $artist) : ?>
 							<option value="<?php echo $artist->ID; ?>" <?php if($artist->ID == $country_id) echo 'selected'; ?>><?php echo $artist->post_title; ?></option>
@@ -1108,7 +1111,7 @@ class ArteForaDoMuseu_Artworks {
 
 	function save_artwork_country($post_id) {
 
-		if(isset($_REQUEST['country'])) {
+		if(isset($_REQUEST['artwork_country'])) {
 
 			$countries = get_posts(array(
 				'post_type' => 'country',
@@ -1124,9 +1127,9 @@ class ArteForaDoMuseu_Artworks {
 			foreach ($countries as $country) {
 				delete_post_meta($country->ID, '_artworks', $post_id);
 			}
-			update_post_meta($_POST['country'], '_artworks', $post_id);
+			update_post_meta($_POST['artwork_country'], '_artworks', $post_id);
 		} else {
-			delete_post_meta($_POST['country'], '_artworks');
+			delete_post_meta($_POST['artwork_country'], '_artworks');
 		}
 	}
 
@@ -1343,14 +1346,18 @@ class ArteForaDoMuseu_Artworks {
 		<?php
 	}
 
-	//Advanced search form
+	/* ++
+	 * Advanced search
+	 */
 	
+
+	//++ Creates search lightbox
 	function advanced_search() {
 		?>
 		<div id="advanced_search">
 			<h2 class="lightbox_title"><span class="lsf">&#xE116;</span> <?php printf(__('Advanced search', 'arteforadomuseu'), '<span class="title"></span>'); ?></h2>
 			<div class="lightbox_content">
-				<form id="advanced_search_form" class="clearfix">
+				<form id="advanced_search_form" role="search" class="clearfix" method="get" action="<?php bloginfo('url'); ?>">
 					<div class="form-inputs">
 						<?php $this->search_form_inputs(); ?>
 					</div>
@@ -1364,6 +1371,7 @@ class ArteForaDoMuseu_Artworks {
 	<?php
 	}
 
+	//++ Defines search form
 	function search_form_inputs($post = false) {
 		?>
 		<input type="text" name="s" class="title" placeholder="<?php _e('Keyword', 'arteforadomuseu'); ?>" />
@@ -1390,7 +1398,7 @@ class ArteForaDoMuseu_Artworks {
 		<h3><?php _e('Languages', 'arteforadomuseu'); ?></h3>
 		<div class="languages form-section row clearfix">
 			<div class="clearfix">
-				<?php $this->box_artwork_languages($post); ?>
+				<?php $this->box_artwork_languages(); ?>
 			</div>
 		</div>
 		<h3><?php _e('Licenses', 'arteforadomuseu'); ?></h3>
@@ -1420,6 +1428,83 @@ class ArteForaDoMuseu_Artworks {
 		<?php
 	}
 
+	//++ Changes default search query
+	function advanced_search_query( $query ) {
+		if (isset($_GET['s']) && empty($_GET['s']) && $query->is_main_query()) {
+			$query->is_search = true;
+			$query->is_home = false;
+		}
+
+		if ($query->is_search()) {
+			$query->set('post_type', 'post');
+			$meta_query = array();
+
+			$fields = array(
+				'artwork_country', 
+				'artwork_city', 
+				'artwork_organization', 
+				'artwork_organizations', 
+				'artwork_funders', 
+				'artwork_collections', 
+				'artwork_site_accessibility', 
+				'artwork_site_time_markers', 
+				'artwork_interface_languages', 
+				'artwork_resource_languages', 
+				'artwork_site_license', 
+				'artwork_resource_license', 
+				'artwork_resource_types', 
+				'artwork_academic_level',
+				'artwork_subject_areas',
+				'artwork_output_interfaces',
+				'artwork_input_by_users'
+			);
+
+			foreach ($fields as $field) {
+
+				if ($_REQUEST[$field] != '') {
+
+					if ($field = 'artwork_country') {
+						$artist_artworks = get_post_meta($_REQUEST[$field], '_artworks', false);
+						if (empty($artist_artworks)) {
+							$query->set('post__in', array(0));
+						} else {
+							$query->set('post__in', $artist_artworks);
+						}
+					} elseif (
+						$field == 'artwork_interface_languages' ||
+						$field == 'artwork_resource_languages' ||
+						$field == 'artwork_site_license' ||
+						$field == 'artwork_resource_license' ||
+						$field == 'artwork_resource_types' ||
+						$field == 'artwork_academic_level' ||
+						$field == 'artwork_subject_areas' ||
+						$field == 'artwork_output_interfaces' ||
+						$field == 'artwork_input_by_users'
+					) {
+						foreach ($_REQUEST[$field] as $field_row) {
+							$meta_query[] = array(
+								'key' => $field,
+								'value' => $field_row,
+								'compare' => 'LIKE',
+							);
+						}
+					} else {
+						$meta_query[] = array(
+							'key' => $field,
+							'value' => $_REQUEST[$field],
+							'compare' => 'LIKE'
+						);
+					}
+				}
+			}
+
+			$meta_query['relation'] = 'AND';
+			$query->set( 'meta_query', $meta_query );
+
+			return $query;
+		}
+	}
+
 	/*
 	 * Ajax stuff
 	 */
@@ -1444,7 +1529,7 @@ class ArteForaDoMuseu_Artworks {
 		if(!$data['title_en'] || !$data['title_es'] || !$data['title_pt'])
 			$this->ajax_response(array('error_msg' => __('You must enter a title', 'arteforadomuseu')));
 
-		if(!$data['categories'])
+		if(!$data['category_name'])
 			$this->ajax_response(array('error_msg' => __('You must select a category', 'arteforadomuseu')));
 
 		if(!$data['geocode_address'])

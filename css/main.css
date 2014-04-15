@@ -663,7 +663,7 @@ input[type=submit].remove:active {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
   border: 0;
   max-height: 90vh;
-  overflow: auto;
+  overflow-y: auto;
 }
 #masthead #masthead-nav nav ul > li.categories ul li,
 .displaying-map #masthead #masthead-nav nav ul > li.categories ul li {
