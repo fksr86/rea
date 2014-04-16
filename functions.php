@@ -303,8 +303,16 @@ function mira_lang_vocab_lang($array) {
 			$result_array[] = __('English', 'arteforadomuseu');
 			break;
 
+			case "portuguese" :
+			$result_array[] = __('Portuguese', 'arteforadomuseu');
+			break;
+
 			case "quechua" :
 			$result_array[] = __('Quechua', 'arteforadomuseu');
+			break;
+
+			case "others" :
+			$result_array[] = __('Others', 'arteforadomuseu');
 			break;
 		}
 	}

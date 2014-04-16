@@ -727,7 +727,9 @@ class ArteForaDoMuseu_Artworks {
 					<li><label><input type="checkbox" class="interface-languages" name="artwork_interface_languages[]" <?php if((is_array($interface_languages)) && in_array('guarani', $interface_languages)) echo "checked"; ?> value="guarani" /><?php _e('Guarani', 'arteforadomuseu'); ?></label></li>
 					<li><label><input type="checkbox" class="interface-languages" name="artwork_interface_languages[]" <?php if((is_array($interface_languages)) && in_array('dutch', $interface_languages)) echo "checked"; ?> value="dutch" /><?php _e('Dutch', 'arteforadomuseu'); ?></label></li>
 					<li><label><input type="checkbox" class="interface-languages" name="artwork_interface_languages[]" <?php if((is_array($interface_languages)) && in_array('english', $interface_languages)) echo "checked"; ?> value="english" /><?php _e('English', 'arteforadomuseu'); ?></label></li>
+					<li><label><input type="checkbox" class="interface-languages" name="artwork_interface_languages[]" <?php if((is_array($interface_languages)) && in_array('portuguese', $interface_languages)) echo "checked"; ?> value="portuguese" /><?php _e('Portuguese', 'arteforadomuseu'); ?></label></li>
 					<li><label><input type="checkbox" class="interface-languages" name="artwork_interface_languages[]" <?php if((is_array($interface_languages)) && in_array('quechua', $interface_languages)) echo "checked"; ?> value="quechua" /><?php _e('Quechua', 'arteforadomuseu'); ?></label></li>
+					<li><label><input type="checkbox" class="interface-languages" name="artwork_interface_languages[]" <?php if((is_array($interface_languages)) && in_array('others', $interface_languages)) echo "checked"; ?> value="others" /><?php _e('Others', 'arteforadomuseu'); ?></label></li>
 				</ul>
 			</div>
 			<div class="half-2">
@@ -740,7 +742,9 @@ class ArteForaDoMuseu_Artworks {
 					<li><label><input type="checkbox" class="resource-languages" name="artwork_resource_languages[]" <?php if((is_array($resource_languages)) && in_array('guarani', $resource_languages)) echo "checked"; ?> value="guarani" /><?php _e('Guarani', 'arteforadomuseu'); ?></label></li>
 					<li><label><input type="checkbox" class="resource-languages" name="artwork_resource_languages[]" <?php if((is_array($resource_languages)) && in_array('dutch', $resource_languages)) echo "checked"; ?> value="dutch" /><?php _e('Dutch', 'arteforadomuseu'); ?></label></li>
 					<li><label><input type="checkbox" class="resource-languages" name="artwork_resource_languages[]" <?php if((is_array($resource_languages)) && in_array('english', $resource_languages)) echo "checked"; ?> value="english" /><?php _e('English', 'arteforadomuseu'); ?></label></li>
+					<li><label><input type="checkbox" class="resource-languages" name="artwork_resource_languages[]" <?php if((is_array($resource_languages)) && in_array('portuguese', $resource_languages)) echo "checked"; ?> value="portuguese" /><?php _e('Portuguese', 'arteforadomuseu'); ?></label></li>
 					<li><label><input type="checkbox" class="resource-languages" name="artwork_resource_languages[]" <?php if((is_array($resource_languages)) && in_array('quechua', $resource_languages)) echo "checked"; ?> value="quechua" /><?php _e('Quechua', 'arteforadomuseu'); ?></label></li>
+					<li><label><input type="checkbox" class="resource-languages" name="artwork_resource_languages[]" <?php if((is_array($resource_languages)) && in_array('others', $resource_languages)) echo "checked"; ?> value="others" /><?php _e('Others', 'arteforadomuseu'); ?></label></li>
 				</ul>
 			</div>
 		</div>
@@ -1492,9 +1496,9 @@ class ArteForaDoMuseu_Artworks {
 
 				if ($_REQUEST[$field] != '') {
 
-					if ($field = 'artwork_country') {
+					if ($field == 'artwork_country') {
 						$artist_artworks = get_post_meta($_REQUEST[$field], '_artworks', false);
-						if (empty($artist_artworks)) {
+						if (empty($artist_artworks) && is_numeric($field)) {
 							$query->set('post__in', array(0));
 						} else {
 							$query->set('post__in', $artist_artworks);

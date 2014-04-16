@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MIRA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-16 15:52-0300\n"
-"PO-Revision-Date: 2014-04-16 15:53-0300\n"
+"POT-Creation-Date: 2014-04-16 17:02-0300\n"
+"PO-Revision-Date: 2014-04-16 17:02-0300\n"
 "Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -139,246 +139,246 @@ msgstr "idiomas do cabeçalho"
 msgid "Widgets in this area will be shown on the header side."
 msgstr "Widgets nesta área serão mostrados no cabeçalho"
 
-#: ../functions.php:232 ../inc/artworks/artworks.php:781
-#: ../inc/artworks/artworks.php:796
+#: ../functions.php:232 ../inc/artworks/artworks.php:783
+#: ../inc/artworks/artworks.php:798
 msgid "CC-BY"
 msgstr "CC-BY"
 
-#: ../functions.php:236 ../inc/artworks/artworks.php:782
-#: ../inc/artworks/artworks.php:797
+#: ../functions.php:236 ../inc/artworks/artworks.php:784
+#: ../inc/artworks/artworks.php:799
 msgid "CC-BY-SA"
 msgstr "CC-BY-SA"
 
-#: ../functions.php:240 ../inc/artworks/artworks.php:783
-#: ../inc/artworks/artworks.php:798
+#: ../functions.php:240 ../inc/artworks/artworks.php:785
+#: ../inc/artworks/artworks.php:800
 msgid "CC-BY-NC-SA"
 msgstr "CC-BY-NC-SA"
 
-#: ../functions.php:244 ../inc/artworks/artworks.php:784
-#: ../inc/artworks/artworks.php:799
+#: ../functions.php:244 ../inc/artworks/artworks.php:786
+#: ../inc/artworks/artworks.php:801
 msgid "CC-BY-NC"
 msgstr "CC-BY-NC"
 
-#: ../functions.php:248 ../inc/artworks/artworks.php:785
-#: ../inc/artworks/artworks.php:800
+#: ../functions.php:248 ../inc/artworks/artworks.php:787
+#: ../inc/artworks/artworks.php:802
 msgid "CC-BY-ND"
 msgstr "CC-BY-ND"
 
-#: ../functions.php:252 ../inc/artworks/artworks.php:786
-#: ../inc/artworks/artworks.php:801
+#: ../functions.php:252 ../inc/artworks/artworks.php:788
+#: ../inc/artworks/artworks.php:803
 msgid "CC-BY-NC-ND"
 msgstr "CC-BY-NC-ND"
 
-#: ../functions.php:256 ../inc/artworks/artworks.php:787
-#: ../inc/artworks/artworks.php:802
+#: ../functions.php:256 ../inc/artworks/artworks.php:789
+#: ../inc/artworks/artworks.php:804
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../functions.php:260 ../inc/artworks/artworks.php:788
-#: ../inc/artworks/artworks.php:803
+#: ../functions.php:260 ../inc/artworks/artworks.php:790
+#: ../inc/artworks/artworks.php:805
 msgid "Public domain"
 msgstr "Domínio público"
 
-#: ../functions.php:264 ../inc/artworks/artworks.php:789
-#: ../inc/artworks/artworks.php:804
+#: ../functions.php:264 ../inc/artworks/artworks.php:791
+#: ../inc/artworks/artworks.php:806
 msgid "None"
 msgstr "Nenhuma"
 
 #: ../functions.php:268 ../inc/artworks/artworks.php:264
-#: ../inc/artworks/artworks.php:790 ../inc/artworks/artworks.php:805
-#: ../inc/artworks/artworks.php:1366 ../inc/artworks/artworks.php:1451
+#: ../inc/artworks/artworks.php:792 ../inc/artworks/artworks.php:807
+#: ../inc/artworks/artworks.php:1368 ../inc/artworks/artworks.php:1453
 msgid "Other"
 msgstr "Outra"
 
 #: ../functions.php:279 ../inc/artworks/artworks.php:723
-#: ../inc/artworks/artworks.php:736
+#: ../inc/artworks/artworks.php:737
 msgid "Aymara"
 msgstr "Aymara"
 
 #: ../functions.php:283 ../inc/artworks/artworks.php:724
-#: ../inc/artworks/artworks.php:737
+#: ../inc/artworks/artworks.php:738
 msgid "Creole"
 msgstr "Creole"
 
 #: ../functions.php:287 ../functions.php:448 ../inc/artworks/artworks.php:725
-#: ../inc/artworks/artworks.php:738 ../inc/artworks/artworks.php:884
+#: ../inc/artworks/artworks.php:739 ../inc/artworks/artworks.php:886
 msgid "Spanish"
 msgstr "Espanhol"
 
 #: ../functions.php:291 ../inc/artworks/artworks.php:726
-#: ../inc/artworks/artworks.php:739
+#: ../inc/artworks/artworks.php:740
 msgid "French"
 msgstr "Francês"
 
 #: ../functions.php:295 ../inc/artworks/artworks.php:727
-#: ../inc/artworks/artworks.php:740
+#: ../inc/artworks/artworks.php:741
 msgid "Guarani"
 msgstr "Guarani"
 
 #: ../functions.php:299 ../inc/artworks/artworks.php:728
-#: ../inc/artworks/artworks.php:741
+#: ../inc/artworks/artworks.php:742
 msgid "Dutch"
 msgstr "Holandês"
 
 #: ../functions.php:303 ../functions.php:452 ../inc/artworks/artworks.php:729
-#: ../inc/artworks/artworks.php:742 ../inc/artworks/artworks.php:885
+#: ../inc/artworks/artworks.php:743 ../inc/artworks/artworks.php:887
 msgid "English"
 msgstr "Inglês"
 
 #: ../functions.php:307 ../inc/artworks/artworks.php:730
-#: ../inc/artworks/artworks.php:743
+#: ../inc/artworks/artworks.php:744
 msgid "Quechua"
 msgstr "Quechua"
 
-#: ../functions.php:318 ../inc/artworks/artworks.php:845
+#: ../functions.php:318 ../inc/artworks/artworks.php:847
 msgid "Animation"
 msgstr "Animação"
 
-#: ../functions.php:322 ../inc/artworks/artworks.php:846
+#: ../functions.php:322 ../inc/artworks/artworks.php:848
 msgid "Audio"
 msgstr "Áudio"
 
-#: ../functions.php:326 ../inc/artworks/artworks.php:847
+#: ../functions.php:326 ../inc/artworks/artworks.php:849
 msgid "Digital class"
 msgstr "Aula digital"
 
-#: ../functions.php:330 ../inc/artworks/artworks.php:848
+#: ../functions.php:330 ../inc/artworks/artworks.php:850
 msgid "Game"
 msgstr "Jogo"
 
-#: ../functions.php:334 ../inc/artworks/artworks.php:849
+#: ../functions.php:334 ../inc/artworks/artworks.php:851
 msgid "Image"
 msgstr "Imagem"
 
-#: ../functions.php:338 ../inc/artworks/artworks.php:850
+#: ../functions.php:338 ../inc/artworks/artworks.php:852
 msgid "Digital book"
 msgstr "Livro digital"
 
-#: ../functions.php:342 ../inc/artworks/artworks.php:851
+#: ../functions.php:342 ../inc/artworks/artworks.php:853
 msgid "Simulation"
 msgstr "Simulação"
 
-#: ../functions.php:346 ../inc/artworks/artworks.php:852
+#: ../functions.php:346 ../inc/artworks/artworks.php:854
 msgid "Software"
 msgstr "Software"
 
-#: ../functions.php:350 ../inc/artworks/artworks.php:853
+#: ../functions.php:350 ../inc/artworks/artworks.php:855
 msgid "Text"
 msgstr "Texto"
 
-#: ../functions.php:354 ../inc/artworks/artworks.php:854
+#: ../functions.php:354 ../inc/artworks/artworks.php:856
 msgid "Video"
 msgstr "Vídeo"
 
-#: ../functions.php:365 ../inc/artworks/artworks.php:860
+#: ../functions.php:365 ../inc/artworks/artworks.php:862
 msgid "0 - Early childhood education"
 msgstr "0 - Educação pré-primária"
 
-#: ../functions.php:369 ../inc/artworks/artworks.php:861
+#: ../functions.php:369 ../inc/artworks/artworks.php:863
 msgid "1 - Primary"
 msgstr "1 - Educação primária"
 
-#: ../functions.php:373 ../inc/artworks/artworks.php:862
+#: ../functions.php:373 ../inc/artworks/artworks.php:864
 msgid "2 - Lower secondary"
 msgstr "2 - Ensino secundário inferior"
 
-#: ../functions.php:377 ../inc/artworks/artworks.php:863
+#: ../functions.php:377 ../inc/artworks/artworks.php:865
 msgid "3 - Upper secondary"
 msgstr "3 - Ensino secundário"
 
-#: ../functions.php:381 ../inc/artworks/artworks.php:864
+#: ../functions.php:381 ../inc/artworks/artworks.php:866
 msgid "4 - Post-secondary non-tertiary"
 msgstr "4 - Ensino pós-secundário não superior"
 
-#: ../functions.php:385 ../inc/artworks/artworks.php:865
+#: ../functions.php:385 ../inc/artworks/artworks.php:867
 msgid "5 - Short-cycle tertiary"
 msgstr "5 - Educação terciária de ciclo curto"
 
-#: ../functions.php:389 ../inc/artworks/artworks.php:866
+#: ../functions.php:389 ../inc/artworks/artworks.php:868
 msgid "6 - Bachelor or equivalent"
 msgstr "6 - Bacharelado ou equivalente"
 
-#: ../functions.php:393 ../inc/artworks/artworks.php:867
+#: ../functions.php:393 ../inc/artworks/artworks.php:869
 msgid "7 - Master or equivalent"
 msgstr "7 - Nível de mestrado"
 
-#: ../functions.php:397 ../inc/artworks/artworks.php:868
+#: ../functions.php:397 ../inc/artworks/artworks.php:870
 msgid "8 - Doctoral or equivalent"
 msgstr "8 - Nível de doutorado"
 
-#: ../functions.php:401 ../inc/artworks/artworks.php:869
+#: ../functions.php:401 ../inc/artworks/artworks.php:871
 msgid "9 - Not elsewhere classified"
 msgstr "9 - Não classificado em outra parte"
 
-#: ../functions.php:412 ../inc/artworks/artworks.php:875
+#: ../functions.php:412 ../inc/artworks/artworks.php:877
 msgid "Philosophy"
 msgstr "Filosofia"
 
-#: ../functions.php:416 ../inc/artworks/artworks.php:876
+#: ../functions.php:416 ../inc/artworks/artworks.php:878
 msgid "Sociology"
 msgstr "Sociologia"
 
-#: ../functions.php:420 ../inc/artworks/artworks.php:877
+#: ../functions.php:420 ../inc/artworks/artworks.php:879
 msgid "Geography"
 msgstr "Geografia"
 
-#: ../functions.php:424 ../inc/artworks/artworks.php:878
+#: ../functions.php:424 ../inc/artworks/artworks.php:880
 msgid "History"
 msgstr "História"
 
-#: ../functions.php:428 ../inc/artworks/artworks.php:879
+#: ../functions.php:428 ../inc/artworks/artworks.php:881
 msgid "Biology"
 msgstr "Biologia"
 
-#: ../functions.php:432 ../inc/artworks/artworks.php:880
+#: ../functions.php:432 ../inc/artworks/artworks.php:882
 msgid "Science"
 msgstr "Ciências"
 
-#: ../functions.php:436 ../inc/artworks/artworks.php:881
+#: ../functions.php:436 ../inc/artworks/artworks.php:883
 msgid "Chemistry"
 msgstr "Química"
 
-#: ../functions.php:440 ../inc/artworks/artworks.php:882
+#: ../functions.php:440 ../inc/artworks/artworks.php:884
 msgid "Physics"
 msgstr "Física"
 
-#: ../functions.php:444 ../inc/artworks/artworks.php:883
+#: ../functions.php:444 ../inc/artworks/artworks.php:885
 msgid "Art"
 msgstr "Arte"
 
-#: ../functions.php:456 ../inc/artworks/artworks.php:886
+#: ../functions.php:456 ../inc/artworks/artworks.php:888
 msgid "Portuguese"
 msgstr "Português"
 
-#: ../functions.php:460 ../inc/artworks/artworks.php:887
+#: ../functions.php:460 ../inc/artworks/artworks.php:889
 msgid "Mathematics"
 msgstr "Matemática"
 
-#: ../functions.php:471 ../inc/artworks/artworks.php:931
+#: ../functions.php:471 ../inc/artworks/artworks.php:933
 msgid "Download data (JSON, XML, CSV)"
 msgstr "Download data (JSON, XML, CSV)"
 
-#: ../functions.php:475 ../inc/artworks/artworks.php:932
+#: ../functions.php:475 ../inc/artworks/artworks.php:934
 msgid "Output services (API, OAI, SQI, SRU, SPI)"
 msgstr "Output services (API, OAI, SQI, SRU, SPI)"
 
-#: ../functions.php:486 ../inc/artworks/artworks.php:938
+#: ../functions.php:486 ../inc/artworks/artworks.php:940
 msgid "Contact (form/email)"
 msgstr "Contato"
 
-#: ../functions.php:490 ../inc/artworks/artworks.php:939
+#: ../functions.php:490 ../inc/artworks/artworks.php:941
 msgid "Join (create account)"
 msgstr "Cadastro"
 
-#: ../functions.php:494 ../inc/artworks/artworks.php:940
+#: ../functions.php:494 ../inc/artworks/artworks.php:942
 msgid "Comment (vote, tag)"
 msgstr "Comentário"
 
-#: ../functions.php:498 ../inc/artworks/artworks.php:941
+#: ../functions.php:498 ../inc/artworks/artworks.php:943
 msgid "Contribute (post/moderated post)"
 msgstr "Contribuição"
 
-#: ../functions.php:502 ../inc/artworks/artworks.php:942
+#: ../functions.php:502 ../inc/artworks/artworks.php:944
 msgid "Community (forums, COP, bulletin boards)"
 msgstr "Comunidade"
 
@@ -503,7 +503,7 @@ msgid "Remove this artwork from the art guide"
 msgstr "Remover obra deste roteiro"
 
 #: ../inc/artguides/artguides.php:527 ../inc/artists/artists.php:682
-#: ../inc/artworks/artworks.php:543 ../inc/artworks/artworks.php:1209
+#: ../inc/artworks/artworks.php:543 ../inc/artworks/artworks.php:1211
 msgid "Remove"
 msgstr "Remover"
 
@@ -537,7 +537,7 @@ msgstr "Criar"
 
 #: ../inc/artguides/artguides.php:566 ../inc/artguides/artguides.php:593
 #: ../inc/artguides/artguides.php:607 ../inc/artists/artists.php:646
-#: ../inc/artworks/artworks.php:1275 ../inc/artworks/artworks.php:1395
+#: ../inc/artworks/artworks.php:1277 ../inc/artworks/artworks.php:1397
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -616,7 +616,7 @@ msgstr[1] "%s obras"
 
 #: ../inc/artguides/templates/archive.php:60
 #: ../inc/artists/templates/archive.php:54 ../inc/artworks/artworks.php:540
-#: ../inc/artworks/artworks.php:1206 ../inc/featured.php:33
+#: ../inc/artworks/artworks.php:1208 ../inc/featured.php:33
 msgid "Featured"
 msgstr "Destaque"
 
@@ -835,28 +835,28 @@ msgstr "URL e contato"
 msgid "Place"
 msgstr "Local"
 
-#: ../inc/artworks/artworks.php:204 ../inc/artworks/artworks.php:1338
-#: ../inc/artworks/artworks.php:1423 ../single.php:90
+#: ../inc/artworks/artworks.php:204 ../inc/artworks/artworks.php:1340
+#: ../inc/artworks/artworks.php:1425 ../single.php:90
 msgid "Organizations"
 msgstr "Organizações"
 
-#: ../inc/artworks/artworks.php:214 ../inc/artworks/artworks.php:1342
-#: ../inc/artworks/artworks.php:1427
+#: ../inc/artworks/artworks.php:214 ../inc/artworks/artworks.php:1344
+#: ../inc/artworks/artworks.php:1429
 msgid "Languages"
 msgstr "Idiomas"
 
-#: ../inc/artworks/artworks.php:234 ../inc/artworks/artworks.php:1348
-#: ../inc/artworks/artworks.php:1433
+#: ../inc/artworks/artworks.php:234 ../inc/artworks/artworks.php:1350
+#: ../inc/artworks/artworks.php:1435
 msgid "Licenses"
 msgstr "Licenças"
 
-#: ../inc/artworks/artworks.php:244 ../inc/artworks/artworks.php:1354
-#: ../inc/artworks/artworks.php:1439 ../single.php:46 ../single.php:117
+#: ../inc/artworks/artworks.php:244 ../inc/artworks/artworks.php:1356
+#: ../inc/artworks/artworks.php:1441 ../single.php:46 ../single.php:117
 msgid "Resources"
 msgstr "Recursos"
 
-#: ../inc/artworks/artworks.php:254 ../inc/artworks/artworks.php:1360
-#: ../inc/artworks/artworks.php:1445
+#: ../inc/artworks/artworks.php:254 ../inc/artworks/artworks.php:1362
+#: ../inc/artworks/artworks.php:1447
 msgid "Input and output"
 msgstr "Input e output"
 
@@ -924,8 +924,8 @@ msgstr "Cidade (Espanhol)"
 msgid "City (Portuguese)"
 msgstr "Cidade (Português)"
 
-#: ../inc/artworks/artworks.php:616 ../inc/artworks/artworks.php:1334
-#: ../inc/artworks/artworks.php:1419 ../inc/geolocator/geolocator.php:71
+#: ../inc/artworks/artworks.php:616 ../inc/artworks/artworks.php:1336
+#: ../inc/artworks/artworks.php:1421 ../inc/geolocator/geolocator.php:71
 #: ../single.php:88
 msgid "City"
 msgstr "Cidade"
@@ -985,143 +985,147 @@ msgstr "Financiadores (Português)"
 msgid "Interface languages"
 msgstr "Idiomas da interface"
 
-#: ../inc/artworks/artworks.php:734 ../single.php:93
+#: ../inc/artworks/artworks.php:731 ../inc/artworks/artworks.php:745
+msgid "Others"
+msgstr "Outras"
+
+#: ../inc/artworks/artworks.php:735 ../single.php:93
 msgid "Resource languages"
 msgstr "Idiomas dos recursos"
 
-#: ../inc/artworks/artworks.php:779 ../single.php:94
+#: ../inc/artworks/artworks.php:781 ../single.php:94
 msgid "Site license"
 msgstr "Licença do site"
 
-#: ../inc/artworks/artworks.php:794 ../single.php:95
+#: ../inc/artworks/artworks.php:796 ../single.php:95
 msgid "Resource license"
 msgstr "Licença dos recursos"
 
-#: ../inc/artworks/artworks.php:843
+#: ../inc/artworks/artworks.php:845
 msgid "Types of resources/ Media type"
 msgstr "Tipos de recursos/ Tipo de mídia"
 
-#: ../inc/artworks/artworks.php:858 ../single.php:97
+#: ../inc/artworks/artworks.php:860 ../single.php:97
 msgid "Academic level"
 msgstr "Nível acadêmico"
 
-#: ../inc/artworks/artworks.php:873
+#: ../inc/artworks/artworks.php:875
 msgid "Subject area/ Areas of knowledge"
 msgstr "Disciplina/ Áreas de conhecimento"
 
-#: ../inc/artworks/artworks.php:929
+#: ../inc/artworks/artworks.php:931
 msgid "Output Interfaces"
 msgstr "Output Interfaces"
 
-#: ../inc/artworks/artworks.php:936 ../single.php:100
+#: ../inc/artworks/artworks.php:938 ../single.php:100
 msgid "Input by users"
 msgstr "Input dos usuários"
 
-#: ../inc/artworks/artworks.php:980 ../single.php:101
+#: ../inc/artworks/artworks.php:982 ../single.php:101
 msgid "Collections"
 msgstr "Coleções"
 
-#: ../inc/artworks/artworks.php:981 ../single.php:102
+#: ../inc/artworks/artworks.php:983 ../single.php:102
 msgid "Site accessibility"
 msgstr "Acessibilidade do site"
 
-#: ../inc/artworks/artworks.php:982 ../single.php:103
+#: ../inc/artworks/artworks.php:984 ../single.php:103
 msgid "Site time markers"
 msgstr ""
 
-#: ../inc/artworks/artworks.php:1083
+#: ../inc/artworks/artworks.php:1085
 msgid "Select a category"
 msgstr "Selecione uma categoria"
 
-#: ../inc/artworks/artworks.php:1127
+#: ../inc/artworks/artworks.php:1129
 msgid "Select a country"
 msgstr "Selecione um país"
 
-#: ../inc/artworks/artworks.php:1176
+#: ../inc/artworks/artworks.php:1178
 msgid "Images"
 msgstr "Imagens"
 
-#: ../inc/artworks/artworks.php:1177
+#: ../inc/artworks/artworks.php:1179
 msgid "Add image"
 msgstr "Adicionar imagem"
 
-#: ../inc/artworks/artworks.php:1202
+#: ../inc/artworks/artworks.php:1204
 msgid "Image title"
 msgstr "Título"
 
-#: ../inc/artworks/artworks.php:1203
+#: ../inc/artworks/artworks.php:1205
 msgid "Image file"
 msgstr "Arquivo"
 
-#: ../inc/artworks/artworks.php:1260
+#: ../inc/artworks/artworks.php:1262
 msgid "Submit an OER suggestion"
 msgstr "Enviar uma sugestão de OER"
 
-#: ../inc/artworks/artworks.php:1267
+#: ../inc/artworks/artworks.php:1269
 msgid "Submit new OER suggestion"
 msgstr "Enviar nova sugestão de OER"
 
-#: ../inc/artworks/artworks.php:1274
+#: ../inc/artworks/artworks.php:1276
 msgid "Submit"
 msgstr "Enviar"
 
-#: ../inc/artworks/artworks.php:1287
+#: ../inc/artworks/artworks.php:1289
 msgid "Title (English)"
 msgstr "Título (Inglês)"
 
-#: ../inc/artworks/artworks.php:1290
+#: ../inc/artworks/artworks.php:1292
 msgid "Title (Spanish)"
 msgstr "Título (Espanhol)"
 
-#: ../inc/artworks/artworks.php:1293
+#: ../inc/artworks/artworks.php:1295
 msgid "Title (Portuguese)"
 msgstr "Título (Português)"
 
-#: ../inc/artworks/artworks.php:1298
+#: ../inc/artworks/artworks.php:1300
 msgid "Description (English)"
 msgstr "Descrição (Inglês)"
 
-#: ../inc/artworks/artworks.php:1301
+#: ../inc/artworks/artworks.php:1303
 msgid "Description (Spanish)"
 msgstr "Descrição (Espanhol)"
 
-#: ../inc/artworks/artworks.php:1304
+#: ../inc/artworks/artworks.php:1306
 msgid "Description (Portuguese)"
 msgstr "Descrição (Português)"
 
-#: ../inc/artworks/artworks.php:1319
+#: ../inc/artworks/artworks.php:1321
 msgid "Multimedia"
 msgstr "Multimídia"
 
-#: ../inc/artworks/artworks.php:1330 ../single.php:87
+#: ../inc/artworks/artworks.php:1332 ../single.php:87
 msgid "Contact"
 msgstr "Contato"
 
-#: ../inc/artworks/artworks.php:1387 ../searchform.php:4
+#: ../inc/artworks/artworks.php:1389 ../searchform.php:4
 msgid "Advanced search"
 msgstr "Busca avançada"
 
-#: ../inc/artworks/artworks.php:1394
+#: ../inc/artworks/artworks.php:1396
 msgid "Search"
 msgstr "Buscar"
 
-#: ../inc/artworks/artworks.php:1406
+#: ../inc/artworks/artworks.php:1408
 msgid "Keyword"
 msgstr "Palavra-chave"
 
-#: ../inc/artworks/artworks.php:1559
+#: ../inc/artworks/artworks.php:1561
 msgid "You must enter a title"
 msgstr "Você deve inserir um título"
 
-#: ../inc/artworks/artworks.php:1562
+#: ../inc/artworks/artworks.php:1564
 msgid "You must select a category"
 msgstr "Você deve selecionar uma categoria"
 
-#: ../inc/artworks/artworks.php:1565
+#: ../inc/artworks/artworks.php:1567
 msgid "You must enter the address/location"
 msgstr "Você deve inserir o endereço/localização"
 
-#: ../inc/artworks/artworks.php:1576
+#: ../inc/artworks/artworks.php:1578
 msgid ""
 "Congratulations! Your OER is now pending approval, soon you'll see it here."
 msgstr ""

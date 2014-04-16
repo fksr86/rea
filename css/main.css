@@ -748,8 +748,8 @@ input[type=submit].remove:active {
 }
 #masthead #masthead-nav #searchform > div div#advanced-search-link,
 .displaying-map #masthead #masthead-nav #searchform > div div#advanced-search-link {
-  width: 200px;
-  text-align: right;
+  width: 250px;
+  text-align: center;
   position: relative;
   float: right;
   display: none;
