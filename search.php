@@ -8,6 +8,7 @@
 
 	<div class="child-section">
 		<div class="section-title">
+			<div class="navigation advanced-search" ><p><a><?php _e('Change search filters', 'arteforadomuseu'); ?></a></p></div>
 			<h2><?php _e('Results', 'arteforadomuseu'); ?></h2>
 		</div>
 		<?php get_template_part('loop'); ?>

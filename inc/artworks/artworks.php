@@ -594,10 +594,6 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_place($post = false) {
 
-		if($post) {
-			$city = $this->get_artwork_city();
-		}
-
 		?>
 		<div id="artwork_place_box" class="loop-box">
 			<div class="box-inputs">
@@ -609,10 +605,15 @@ class ArteForaDoMuseu_Artworks {
 		<?php
 	}
 
-	function box_save_artwork_place() {
+	function box_search_artwork_place($post) {
+
+		if($post == 'search') {
+			$city = $_REQUEST['artwork_city'];
+		}
 
 		?>
-		<div id="artwork_place_box" class="loop-box box-inputs"><input type="text" class="city" size="30" name="artwork_city"  placeholder="<?php _e('City', 'arteforadomuseu'); ?>" /></div>
+
+		<div id="artwork_place_box" class="loop-box box-inputs"><input type="text" class="city" size="30" name="artwork_city" <?php if($city) echo 'value="' . $city . '"'; ?> placeholder="<?php _e('City', 'arteforadomuseu'); ?>" /></div>
 		<?php
 	}
 
@@ -657,20 +658,27 @@ class ArteForaDoMuseu_Artworks {
 		<?php
 	}
 
-	function box_save_artwork_organizations() {
+	function box_search_artwork_organizations($post) {
+
+		if($post == 'search') {
+			$organization = $_REQUEST['artwork_organization'];
+			$organizations = $_REQUEST['artwork_organizations'];
+			$funders = $_REQUEST['artwork_funders'];
+		}
+
 		?>
 		<div id="artwork_organizations_box" class="loop-box">
 			<div class="one-third-1">
 				<h4><?php _e('Organization', 'arteforadomuseu'); ?></h4>
-				<div class="box-inputs"><input type="text" class="organization" size="30" name="artwork_organization" placeholder="<?php _e('Organization', 'arteforadomuseu'); ?>" /></div>
+				<div class="box-inputs"><input type="text" class="organization" size="30" name="artwork_organization" <?php if($organization) echo 'value="' . $organization . '"'; ?> placeholder="<?php _e('Organization', 'arteforadomuseu'); ?>" /></div>
 			</div>
 			<div class="one-third-1">
 				<h4><?php _e('Organizations/Collaborators', 'arteforadomuseu'); ?></h4>
-				<div class="box-inputs"><input type="text" class="organizations" size="30" name="artwork_organizations" placeholder="<?php _e('Organizations/Collaborators', 'arteforadomuseu'); ?>" /></div>
+				<div class="box-inputs"><input type="text" class="organizations" size="30" name="artwork_organizations" <?php if($organizations) echo 'value="' . $organizations . '"'; ?> placeholder="<?php _e('Organizations/Collaborators', 'arteforadomuseu'); ?>" /></div>
 			</div>
 			<div class="one-third-2">
 				<h4><?php _e('Funders', 'arteforadomuseu'); ?></h4>
-				<div class="box-inputs"><input type="text" class="funders" size="30" name="artwork_funders" placeholder="<?php _e('Funders', 'arteforadomuseu'); ?>" /></div>
+				<div class="box-inputs"><input type="text" class="funders" size="30" name="artwork_funders" <?php if($funders) echo 'value="' . $city . '"'; ?> placeholder="<?php _e('Funders', 'arteforadomuseu'); ?>" /></div>
 			</div>
 		</div>
 		<?php
@@ -699,10 +707,13 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_languages($post = false) {
 
-		if($post) {
+		if ($post == 'search') {
+			$interface_languages = $_REQUEST['artwork_interface_languages'];
+			$resource_languages = $_REQUEST['artwork_resource_languages'];
+		} elseif($post) {
 			$interface_languages = $this->get_artwork_interface_languages();
 			$resource_languages = $this->get_artwork_resource_languages();
-		}
+		} 
 		?>
 
 		<div id="artwork_languages_box" class="loop-box">
@@ -754,7 +765,10 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_licenses($post = false) {
 
-		if($post) {
+		if ($post == 'search') {
+			$site_license = $_REQUEST['artwork_site_license'];
+			$resource_license = $_REQUEST['artwork_resource_license'];
+		} elseif($post) {
 			$site_license = $this->get_artwork_site_license();
 			$resource_license = $this->get_artwork_resource_license();
 		}
@@ -813,7 +827,11 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_resources($post = false) {
 
-		if($post) {
+		if ($post == 'search') {
+			$resource_types = $_REQUEST['artwork_resource_types'];
+			$academic_level = $_REQUEST['artwork_academic_level'];
+			$subject_areas = $_REQUEST['artwork_subject_areas'];
+		} elseif($post) {
 			$resource_types = $this->get_artwork_resource_types();
 			$academic_level = $this->get_artwork_academic_level();
 			$subject_areas = $this->get_artwork_subject_areas();
@@ -897,7 +915,10 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_input($post = false) {
 
-		if($post) {
+		if ($post == 'search') {
+			$output_interfaces = $_REQUEST['artwork_output_interfaces'];
+			$input_by_users = $_REQUEST['artwork_input_by_users'];
+		} elseif($post) {
 			$output_interfaces = $this->get_artwork_output_interfaces();
 			$input_by_users = $this->get_artwork_input_by_users();
 		}
@@ -943,7 +964,11 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_other($post = false) {
 
-		if($post) {
+		if ($post == 'search') {
+			$collections = $_REQUEST['artwork_collections'];
+			$site_accessibility = $_REQUEST['artwork_site_accessibility'];
+			$site_time_markers = $_REQUEST['artwork_site_time_markers'];
+		} elseif($post) {
 			$collections = $this->get_artwork_collections();
 			$site_accessibility = $this->get_artwork_site_accessibility();
 			$site_time_markers = $this->get_artwork_site_time_markers();
@@ -1041,9 +1066,11 @@ class ArteForaDoMuseu_Artworks {
 */
 	function box_artwork_categories($post = false) {
 
-		if($post) {
+		if($post == 'search') {
+			$category_name = $_REQUEST['category_name'];
+		} elseif($post) {
 			$category = array_shift(get_the_category($post->ID));
-			$category_id = $category->term_id;
+			$category_name = $category->slug;
 		}
 
 		$categories = get_categories(array('hide_empty' => 0));
@@ -1058,7 +1085,7 @@ class ArteForaDoMuseu_Artworks {
 				<select id="artwork_categories_select" name="category_name">
 					<option></option>
 					<?php foreach($categories as $category) : ?>
-						<option value="<?php echo $category->slug; ?>" <?php if($category->term_id == $category_id) echo 'selected'; ?>><?php echo $category->name; ?></option>
+						<option value="<?php echo $category->slug; ?>" <?php if($category->slug == $category_name) echo 'selected'; ?>><?php echo $category->name; ?></option>
 					<?php endforeach; ?>
 				</select>
 			</div>
@@ -1088,7 +1115,9 @@ class ArteForaDoMuseu_Artworks {
 		if(!$artists)
 			return false;
 
-		if($post) {
+		if($post == 'search') {
+			$country_id = $_REQUEST['artwork_country'];
+		} elseif($post) {
 			$country_id = $this->get_artwork_country();
 		}
 
@@ -1378,51 +1407,51 @@ class ArteForaDoMuseu_Artworks {
 		<div class="clearfix">
 			<div class="half-1">
 				<div class="categories">
-					<?php $this->box_artwork_categories($post); ?>
+					<?php $this->box_artwork_categories('search'); ?>
 				</div>
 			</div>
 			<div class="half-2">
 				<div class="categories">
-					<?php $this->box_artwork_country($post); ?>
+					<?php $this->box_artwork_country('search'); ?>
 				</div>
 			</div>
 		</div>
 		<h3><?php _e('City', 'arteforadomuseu'); ?></h3>
 		<div class="city form-section row clearfix">
-			<?php $this->box_save_artwork_place($post); ?>
+			<?php $this->box_search_artwork_place('search'); ?>
 		</div>
 		<h3><?php _e('Organizations', 'arteforadomuseu'); ?></h3>
 		<div class="organizations form-section row clearfix">
-			<?php $this->box_save_artwork_organizations($post); ?>
+			<?php $this->box_search_artwork_organizations('search'); ?>
 		</div>
 		<h3><?php _e('Languages', 'arteforadomuseu'); ?></h3>
 		<div class="languages form-section row clearfix">
 			<div class="clearfix">
-				<?php $this->box_artwork_languages(); ?>
+				<?php $this->box_artwork_languages('search'); ?>
 			</div>
 		</div>
 		<h3><?php _e('Licenses', 'arteforadomuseu'); ?></h3>
 		<div class="licenses form-section row clearfix">
 			<div class="clearfix">
-				<?php $this->box_artwork_licenses($post); ?>
+				<?php $this->box_artwork_licenses('search'); ?>
 			</div>
 		</div>
 		<h3><?php _e('Resources', 'arteforadomuseu'); ?></h3>
 		<div class="resources form-section row clearfix">
 			<div class="clearfix">
-				<?php $this->box_artwork_resources($post); ?>
+				<?php $this->box_artwork_resources('search'); ?>
 			</div>
 		</div>
 		<h3><?php _e('Input and output', 'arteforadomuseu'); ?></h3>
 		<div class="input form-section row clearfix">
 			<div class="clearfix">
-				<?php $this->box_artwork_input($post); ?>
+				<?php $this->box_artwork_input('search'); ?>
 			</div>
 		</div>
 		<h3><?php _e('Other', 'arteforadomuseu'); ?></h3>
 		<div class="other form-section row clearfix">
 			<div class="clearfix">
-				<?php $this->box_artwork_other($post); ?>
+				<?php $this->box_artwork_other('search'); ?>
 			</div>
 		</div>
 		<?php

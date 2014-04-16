@@ -69,15 +69,15 @@
 
 	$(document).ready(function() {
 
-		$('#advanced-search-link').click(function() {
+		$('.advanced-search').click(function() {
 			advancedSearch.open();
 			return false;
 		});
+
 
 		advancedSearch.find('form').submit(function() {
 			advancedSearch($(this).serialize());
 			return false;
 		});
-
 	});
 })(jQuery);

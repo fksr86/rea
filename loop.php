@@ -40,4 +40,6 @@
 		</ul>
 		<div class="navigation"><p><?php posts_nav_link(); ?></p></div>
 	</section>
+<?php else: ?>
+	<p><?php _e('Sorry, but no posts were found.', 'arteforadomuseu'); ?></p>
 <?php endif; ?>
