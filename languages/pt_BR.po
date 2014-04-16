@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MIRA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-16 14:34-0300\n"
-"PO-Revision-Date: 2014-04-16 14:34-0300\n"
+"POT-Creation-Date: 2014-04-16 15:52-0300\n"
+"PO-Revision-Date: 2014-04-16 15:53-0300\n"
 "Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -635,7 +635,6 @@ msgid "Recently published"
 msgstr "Publicados recentemente"
 
 #: ../inc/artguides/templates/single.php:28
-#: ../inc/artists/templates/single.php:51
 msgid "OERs"
 msgstr "OERs"
 
@@ -752,6 +751,10 @@ msgstr "Vídeos"
 #: ../inc/artists/templates/single.php:77 ../single.php:54 ../single.php:156
 msgid "Comments"
 msgstr "Comentários"
+
+#: ../inc/artists/templates/single.php:51
+msgid "Initiatives"
+msgstr "Iniciativas"
 
 #: ../inc/artists/templates/single.php:62
 #: ../inc/artists/templates/single.php:76 ../single.php:116 ../single.php:155

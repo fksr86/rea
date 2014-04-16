@@ -48,7 +48,7 @@
 			<?php if(have_posts()) : ?>
 				<section id="artworks" class="child-section">
 					<div class="section-title">
-						<h2><?php _e('OERs', 'arteforadomuseu'); ?></h2>
+						<h2><?php _e('Initiatives', 'arteforadomuseu'); ?></h2>
 					</div>
 					<?php get_template_part('loop'); ?>
 				</section>

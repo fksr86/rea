@@ -748,6 +748,8 @@ input[type=submit].remove:active {
 }
 #masthead #masthead-nav #searchform > div div#advanced-search-link,
 .displaying-map #masthead #masthead-nav #searchform > div div#advanced-search-link {
+  width: 200px;
+  text-align: right;
   position: relative;
   float: right;
   display: none;
@@ -1074,6 +1076,16 @@ input[type=submit].remove:active {
   -moz-transition: right 0.2s ease-in-out;
   -o-transition: right 0.2s ease-in-out;
   transition: right 0.2s ease-in-out;
+}
+.displaying-map #content::-webkit-scrollbar {
+  width: 10px;
+  background: #444;
+}
+.displaying-map #content::-webkit-scrollbar-thumb {
+  background: #111;
+}
+.displaying-map #content::-webkit-scrollbar-thumb {
+  background: #000;
 }
 .displaying-map #content a {
   color: #f0f0f0;

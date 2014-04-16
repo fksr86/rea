@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MIRA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-16 14:30-0300\n"
-"PO-Revision-Date: 2014-04-16 14:34-0300\n"
+"POT-Creation-Date: 2014-04-16 15:52-0300\n"
+"PO-Revision-Date: 2014-04-16 15:52-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -635,7 +635,6 @@ msgid "Recently published"
 msgstr "Recientemente publicado"
 
 #: ../inc/artguides/templates/single.php:28
-#: ../inc/artists/templates/single.php:51
 msgid "OERs"
 msgstr "REAs"
 
@@ -752,6 +751,10 @@ msgstr "Videos"
 #: ../inc/artists/templates/single.php:77 ../single.php:54 ../single.php:156
 msgid "Comments"
 msgstr "Comentarios"
+
+#: ../inc/artists/templates/single.php:51
+msgid "Initiatives"
+msgstr "Iniciativas"
 
 #: ../inc/artists/templates/single.php:62
 #: ../inc/artists/templates/single.php:76 ../single.php:116 ../single.php:155

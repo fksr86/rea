@@ -37,9 +37,9 @@
 					<div class="fb-like" data-href="http://www.facebook.com/OpenKnowledgeBrasil" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" data-font="verdana" data-colorscheme="light"></div>
 				</div>
 				<div class="social-links">
-					<a href="http://www.facebook.com/OpenKnowledgeBrasil" class="facebook lsf" rel="external" target="_blank">&#xE047;</a>
+					<!-- <a href="http://www.facebook.com/OpenKnowledgeBrasil" class="facebook lsf" rel="external" target="_blank">&#xE047;</a> -->
 					<!--<a href="http://instagram.com/bhasia#" class="instagram lsf" rel="external" target="_blank">&#xE155;</a>-->
-					<a href="https://twitter.com/okfnbr" class="twitter lsf" rel="external" target="_blank">&#xE12f;</a>
+					<a href="https://twitter.com/MIRALatam" class="twitter lsf" rel="external" target="_blank">&#xE12f;</a>
 					<!--<a href="http://www.bhasia.art.br/video/" class="youtube lsf" rel="external" target="_blank">&#xE141;</a>-->
 				</div>
 			</div>
