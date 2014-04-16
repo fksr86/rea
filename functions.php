@@ -124,9 +124,9 @@ function afdm_city_not_found_message() {
 				<?php _e('Showing all cities results', 'arteforadomuseu'); ?>
 			</p>
 			<?php if(is_user_logged_in()) { ?>
-				<p><a href="#" class="button add_artwork"><?php _e('Click here to add an artwork', 'arteforadomuseu'); ?></a></p>
+				<p><a href="#" class="button add_artwork"><?php _e('Click here to add an OER', 'arteforadomuseu'); ?></a></p>
 			<?php } else { ?>
-				<p><a href="#"><?php _e('Login to submit an artwork!', 'arteforadomuseu'); ?></a></p>
+				<p><a href="#"><?php _e('Login to submit an OER!', 'arteforadomuseu'); ?></a></p>
 			<?php } ?>
 		</div> -->
 		<?php
@@ -215,19 +215,6 @@ register_sidebar( array(
     'after_title'  => '</h1>',
 ) );
 
-register_sidebar( array(
-    'name'         => __( 'footer ruler' ),
-    'id'           => 'footer-ruler',
-    'before_title' => '<h1>',
-    'after_title'  => '</h1>',
-) );
-
-register_sidebar( array(
-    'name'         => __( 'footer stamps' ),
-    'id'           => 'footer-stamps',
-    'before_title' => '<h1>',
-    'after_title'  => '</h1>',
-) );
 
 function mira_lang_array($array) {
 	if(is_array($array)) {

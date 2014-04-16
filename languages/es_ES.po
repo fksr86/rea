@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MIRA\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-16 14:34-0300\n"
+"POT-Creation-Date: 2014-04-16 14:30-0300\n"
 "PO-Revision-Date: 2014-04-16 14:34-0300\n"
-"Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: pt_BR\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
 "X-Poedit-Basepath: .\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Generator: Poedit 1.6.4\n"
 "X-Poedit-SearchPath-0: ..\n"
@@ -20,12 +20,12 @@ msgstr ""
 #: ../archive.php:13
 #, php-format
 msgid "Daily Archives: %s"
-msgstr "Arquivos do dia: %s"
+msgstr "Archivos diarios: %s"
 
 #: ../archive.php:15
 #, php-format
 msgid "Monthly Archives: %s"
-msgstr "Arquivos do mês: %s"
+msgstr "Archivos mensuales: %s"
 
 #: ../archive.php:15
 msgctxt "monthly archives date format"
@@ -35,7 +35,7 @@ msgstr "F Y"
 #: ../archive.php:17
 #, php-format
 msgid "Yearly Archives: %s"
-msgstr "Arquivos do ano: %s"
+msgstr "Archivos anuales: %s"
 
 #: ../archive.php:17
 msgctxt "yearly archives date format"
@@ -44,27 +44,27 @@ msgstr "Y"
 
 #: ../archive.php:19
 msgid "Currently browsing"
-msgstr "Navegando em"
+msgstr "Navegando en"
 
 #: ../archive.php:21
 msgid "Archives"
-msgstr "Arquivo"
+msgstr "Archivos"
 
 #: ../category.php:13 ../index.php:44
 msgid "Latest OERs"
-msgstr "Últimas OERs"
+msgstr "REAs más recientes"
 
 #: ../content-map.php:16
 msgid "Go back to the main map"
-msgstr "Voltar para o mapa principal"
+msgstr "Volver al mapa principal"
 
 #: ../content-map.php:16
 msgid "Back to main map"
-msgstr "Voltar para o mapa principal"
+msgstr "Volver al mapa principal"
 
 #: ../content-popular.php:19
 msgid "Popular in"
-msgstr "Popular em"
+msgstr "Popular en"
 
 #: ../content-popular.php:21 ../inc/artguides/templates/archive.php:93
 #: ../inc/artists/templates/archive.php:87
@@ -73,71 +73,71 @@ msgstr "Popular"
 
 #: ../footer.php:6
 msgid "sponsorship"
-msgstr "patrocínio"
+msgstr "patrocinio"
 
 #: ../footer.php:10
 msgid "realization"
-msgstr "realização"
+msgstr "realización"
 
 #: ../footer.php:26
 msgid "is licensed under a"
-msgstr "está licenciado com uma"
+msgstr "está licenciado con una"
 
 #: ../footer.php:27
 msgid "Creative Commons Attribution 4.0 International License"
-msgstr "Licença Creative Commons Atribuição 4.0 Internacional"
+msgstr "Licencia Creative Commons Attribution 4.0 International"
 
 #: ../functions.php:88
 msgid "Login"
-msgstr "Entrar"
+msgstr "Iniciar sesión"
 
 #: ../functions.php:91
 msgid "Login with: "
-msgstr "Entrar como:"
+msgstr "Iniciar sesión como: "
 
 #: ../functions.php:101
 msgid "Hello"
-msgstr "Olá"
+msgstr "Hola"
 
 #: ../functions.php:101
 msgid "Logout"
-msgstr "Sair"
+msgstr "Finalizar sesión"
 
 #: ../functions.php:105
 msgid "Dashboard"
-msgstr "Painel de controle"
+msgstr "Panel de control"
 
 #: ../functions.php:123
 msgid "We couldn't find anything for your city."
-msgstr "Não encontramos resultados para a sua cidade."
+msgstr "No hemos encontrado resultados en esta ciudad."
 
 #: ../functions.php:124
 msgid "Showing all cities results"
-msgstr "Exibindo resultados de todas as cidades"
+msgstr "Mostrando resultados de todas las ciudads"
 
 #: ../functions.php:127
 msgid "Click here to add an OER"
-msgstr "Clique aqui para adicionar uma OER"
+msgstr "Haga clíc aquí para añadir una REA"
 
 #: ../functions.php:129
 msgid "Login to submit an OER!"
-msgstr "Faça o login para enviar uma OER!"
+msgstr "Inicia sesión para enviar una REA!"
 
 #: ../functions.php:170
 msgid "Upload Logo"
-msgstr "Fazer upload de logo"
+msgstr "Subir logotipo"
 
 #: ../functions.php:187
 msgid "Background Color"
-msgstr "Cor de fundo"
+msgstr "Color de fondo"
 
 #: ../functions.php:211
 msgid "header languages"
-msgstr "idiomas do cabeçalho"
+msgstr "idiomas da encabezera"
 
 #: ../functions.php:213
 msgid "Widgets in this area will be shown on the header side."
-msgstr "Widgets nesta área serão mostrados no cabeçalho"
+msgstr "Widgets de esta área se le aparecen en la cabecera"
 
 #: ../functions.php:232 ../inc/artworks/artworks.php:781
 #: ../inc/artworks/artworks.php:796
@@ -177,18 +177,18 @@ msgstr "Copyright"
 #: ../functions.php:260 ../inc/artworks/artworks.php:788
 #: ../inc/artworks/artworks.php:803
 msgid "Public domain"
-msgstr "Domínio público"
+msgstr "Dominio público"
 
 #: ../functions.php:264 ../inc/artworks/artworks.php:789
 #: ../inc/artworks/artworks.php:804
 msgid "None"
-msgstr "Nenhuma"
+msgstr "Ninguna"
 
 #: ../functions.php:268 ../inc/artworks/artworks.php:264
 #: ../inc/artworks/artworks.php:790 ../inc/artworks/artworks.php:805
 #: ../inc/artworks/artworks.php:1366 ../inc/artworks/artworks.php:1451
 msgid "Other"
-msgstr "Outra"
+msgstr "Otra"
 
 #: ../functions.php:279 ../inc/artworks/artworks.php:723
 #: ../inc/artworks/artworks.php:736
@@ -203,12 +203,12 @@ msgstr "Creole"
 #: ../functions.php:287 ../functions.php:448 ../inc/artworks/artworks.php:725
 #: ../inc/artworks/artworks.php:738 ../inc/artworks/artworks.php:884
 msgid "Spanish"
-msgstr "Espanhol"
+msgstr "Español"
 
 #: ../functions.php:291 ../inc/artworks/artworks.php:726
 #: ../inc/artworks/artworks.php:739
 msgid "French"
-msgstr "Francês"
+msgstr "Francés"
 
 #: ../functions.php:295 ../inc/artworks/artworks.php:727
 #: ../inc/artworks/artworks.php:740
@@ -218,12 +218,12 @@ msgstr "Guarani"
 #: ../functions.php:299 ../inc/artworks/artworks.php:728
 #: ../inc/artworks/artworks.php:741
 msgid "Dutch"
-msgstr "Holandês"
+msgstr "Holandés"
 
 #: ../functions.php:303 ../functions.php:452 ../inc/artworks/artworks.php:729
 #: ../inc/artworks/artworks.php:742 ../inc/artworks/artworks.php:885
 msgid "English"
-msgstr "Inglês"
+msgstr "Inglés"
 
 #: ../functions.php:307 ../inc/artworks/artworks.php:730
 #: ../inc/artworks/artworks.php:743
@@ -232,11 +232,11 @@ msgstr "Quechua"
 
 #: ../functions.php:318 ../inc/artworks/artworks.php:845
 msgid "Animation"
-msgstr "Animação"
+msgstr "Animación"
 
 #: ../functions.php:322 ../inc/artworks/artworks.php:846
 msgid "Audio"
-msgstr "Áudio"
+msgstr "Audio"
 
 #: ../functions.php:326 ../inc/artworks/artworks.php:847
 msgid "Digital class"
@@ -244,19 +244,19 @@ msgstr "Aula digital"
 
 #: ../functions.php:330 ../inc/artworks/artworks.php:848
 msgid "Game"
-msgstr "Jogo"
+msgstr "Juego"
 
 #: ../functions.php:334 ../inc/artworks/artworks.php:849
 msgid "Image"
-msgstr "Imagem"
+msgstr "Imagen"
 
 #: ../functions.php:338 ../inc/artworks/artworks.php:850
 msgid "Digital book"
-msgstr "Livro digital"
+msgstr "Libro digital"
 
 #: ../functions.php:342 ../inc/artworks/artworks.php:851
 msgid "Simulation"
-msgstr "Simulação"
+msgstr "Simulación"
 
 #: ../functions.php:346 ../inc/artworks/artworks.php:852
 msgid "Software"
@@ -268,55 +268,55 @@ msgstr "Texto"
 
 #: ../functions.php:354 ../inc/artworks/artworks.php:854
 msgid "Video"
-msgstr "Vídeo"
+msgstr "Video"
 
 #: ../functions.php:365 ../inc/artworks/artworks.php:860
 msgid "0 - Early childhood education"
-msgstr "0 - Educação pré-primária"
+msgstr "0 - Educación de la primera infancia"
 
 #: ../functions.php:369 ../inc/artworks/artworks.php:861
 msgid "1 - Primary"
-msgstr "1 - Educação primária"
+msgstr "1 - Educación primaria"
 
 #: ../functions.php:373 ../inc/artworks/artworks.php:862
 msgid "2 - Lower secondary"
-msgstr "2 - Ensino secundário inferior"
+msgstr "2 - Educación secundaria baja"
 
 #: ../functions.php:377 ../inc/artworks/artworks.php:863
 msgid "3 - Upper secondary"
-msgstr "3 - Ensino secundário"
+msgstr "3 - Educación secundaria alta"
 
 #: ../functions.php:381 ../inc/artworks/artworks.php:864
 msgid "4 - Post-secondary non-tertiary"
-msgstr "4 - Ensino pós-secundário não superior"
+msgstr "4 - Educación postsecundaria no terciaria"
 
 #: ../functions.php:385 ../inc/artworks/artworks.php:865
 msgid "5 - Short-cycle tertiary"
-msgstr "5 - Educação terciária de ciclo curto"
+msgstr "5 - Educación terciaria de ciclo corto"
 
 #: ../functions.php:389 ../inc/artworks/artworks.php:866
 msgid "6 - Bachelor or equivalent"
-msgstr "6 - Bacharelado ou equivalente"
+msgstr "6 - Grado en educación terciaria o nivel equivalente"
 
 #: ../functions.php:393 ../inc/artworks/artworks.php:867
 msgid "7 - Master or equivalent"
-msgstr "7 - Nível de mestrado"
+msgstr "7 - Nivel de maestría, especialización o equivalente"
 
 #: ../functions.php:397 ../inc/artworks/artworks.php:868
 msgid "8 - Doctoral or equivalent"
-msgstr "8 - Nível de doutorado"
+msgstr "8 - Nivel de doctorado o equivalente"
 
 #: ../functions.php:401 ../inc/artworks/artworks.php:869
 msgid "9 - Not elsewhere classified"
-msgstr "9 - Não classificado em outra parte"
+msgstr "9 - No clasificado en otra parte"
 
 #: ../functions.php:412 ../inc/artworks/artworks.php:875
 msgid "Philosophy"
-msgstr "Filosofia"
+msgstr "Filosofía"
 
 #: ../functions.php:416 ../inc/artworks/artworks.php:876
 msgid "Sociology"
-msgstr "Sociologia"
+msgstr "Sociología"
 
 #: ../functions.php:420 ../inc/artworks/artworks.php:877
 msgid "Geography"
@@ -324,15 +324,15 @@ msgstr "Geografia"
 
 #: ../functions.php:424 ../inc/artworks/artworks.php:878
 msgid "History"
-msgstr "História"
+msgstr "Historia"
 
 #: ../functions.php:428 ../inc/artworks/artworks.php:879
 msgid "Biology"
-msgstr "Biologia"
+msgstr "Biología"
 
 #: ../functions.php:432 ../inc/artworks/artworks.php:880
 msgid "Science"
-msgstr "Ciências"
+msgstr "Ciencia"
 
 #: ../functions.php:436 ../inc/artworks/artworks.php:881
 msgid "Chemistry"
@@ -348,11 +348,11 @@ msgstr "Arte"
 
 #: ../functions.php:456 ../inc/artworks/artworks.php:886
 msgid "Portuguese"
-msgstr "Português"
+msgstr "Portugués"
 
 #: ../functions.php:460 ../inc/artworks/artworks.php:887
 msgid "Mathematics"
-msgstr "Matemática"
+msgstr "Matemáticas"
 
 #: ../functions.php:471 ../inc/artworks/artworks.php:931
 msgid "Download data (JSON, XML, CSV)"
@@ -364,23 +364,23 @@ msgstr "Output services (API, OAI, SQI, SRU, SPI)"
 
 #: ../functions.php:486 ../inc/artworks/artworks.php:938
 msgid "Contact (form/email)"
-msgstr "Contato"
+msgstr "Contacto"
 
 #: ../functions.php:490 ../inc/artworks/artworks.php:939
 msgid "Join (create account)"
-msgstr "Cadastro"
+msgstr "Inscripción"
 
 #: ../functions.php:494 ../inc/artworks/artworks.php:940
 msgid "Comment (vote, tag)"
-msgstr "Comentário"
+msgstr "Comentario"
 
 #: ../functions.php:498 ../inc/artworks/artworks.php:941
 msgid "Contribute (post/moderated post)"
-msgstr "Contribuição"
+msgstr "Contribución"
 
 #: ../functions.php:502 ../inc/artworks/artworks.php:942
 msgid "Community (forums, COP, bulletin boards)"
-msgstr "Comunidade"
+msgstr "Comunidad"
 
 #: ../header.php:79 ../inc/artists/templates/archive.php:7
 msgid "Artists"
@@ -390,7 +390,7 @@ msgstr "Artistas"
 #: ../inc/artguides/artguides.php:66 ../inc/artguides/artguides.php:72
 #: ../inc/artguides/templates/archive.php:8
 msgid "Art guides"
-msgstr "Roteiros"
+msgstr "Itinerarios"
 
 #: ../header.php:91 ../inc/artists/artists.php:57
 #: ../inc/artists/artists.php:67 ../inc/artists/artists.php:73
@@ -400,40 +400,40 @@ msgstr "Países"
 
 #: ../inc/artguides/artguides.php:57
 msgid "Art guide"
-msgstr "Roteiro"
+msgstr "Itinerario"
 
 #: ../inc/artguides/artguides.php:58
 msgid "Add art guide"
-msgstr "Criar roteiro"
+msgstr "Añadir itinerario"
 
 #: ../inc/artguides/artguides.php:59
 msgid "Add new art guide"
-msgstr "Criar novo roteiro"
+msgstr "Añadir nuevo itinerario"
 
 #: ../inc/artguides/artguides.php:60
 msgid "Edit art guide"
-msgstr "Editar roteiro"
+msgstr "Editar itinerario"
 
 #: ../inc/artguides/artguides.php:61 ../inc/artguides/artguides.php:557
 #: ../inc/artguides/artguides.php:601
 msgid "New art guide"
-msgstr "Novo roteiro"
+msgstr "Nuevo itinerario"
 
 #: ../inc/artguides/artguides.php:62
 msgid "View art guide"
-msgstr "Ver roteiro"
+msgstr "Ver itinerario"
 
 #: ../inc/artguides/artguides.php:63
 msgid "Search art guides"
-msgstr "Buscar roteiros"
+msgstr "Buscar itinerario"
 
 #: ../inc/artguides/artguides.php:64
 msgid "No art guide found"
-msgstr "Nenhum roteiro foi encontrado"
+msgstr "No se han encontrado itinerarios"
 
 #: ../inc/artguides/artguides.php:65
 msgid "No art guide found in the trash"
-msgstr "Nenhum roteiro foi encontrado na lixeira"
+msgstr "No se han encontrado itinerarios en la papelera"
 
 #: ../inc/artguides/artguides.php:190 ../inc/artguides/artguides.php:205
 #: ../inc/artguides/artguides.php:216 ../inc/artguides/artguides.php:247
@@ -441,87 +441,87 @@ msgstr "Nenhum roteiro foi encontrado na lixeira"
 #: ../inc/artists/artists.php:294 ../inc/artists/artists.php:302
 #: ../inc/artists/artists.php:793
 msgid "You are not allowed to do that"
-msgstr "Você não tem permissões para fazer isso"
+msgstr "Usted no tiene permiso para hacerlo"
 
 #: ../inc/artguides/artguides.php:193 ../inc/artguides/artguides.php:221
 msgid "You need a title for your art guide"
-msgstr "Você precisa de um título para o seu roteiro"
+msgstr "Es necesario un título para su itinerario"
 
 #: ../inc/artguides/artguides.php:198 ../inc/artguides/artguides.php:226
 #: ../inc/artguides/artguides.php:715 ../inc/artists/artists.php:809
 msgid "Something went wrong"
-msgstr "Algo deu errado"
+msgstr "Algo salió mal"
 
 #: ../inc/artguides/artguides.php:200
 msgid "Your new art guide has been created."
-msgstr "Seu novo roteiro foi criado."
+msgstr "Se creó su nuevo itinerario."
 
 #: ../inc/artguides/artguides.php:200 ../inc/artguides/artguides.php:242
 #: ../inc/artists/artists.php:289
 msgid "Click here to close"
-msgstr "Clique aqui para fechar"
+msgstr "Haga clic aquí para cerrar"
 
 #: ../inc/artguides/artguides.php:208
 msgid "Art guide has been deleted"
-msgstr "Roteiro foi deletado"
+msgstr "Itinerario borrado"
 
 #: ../inc/artguides/artguides.php:231
 msgid "You need to select an art guide"
-msgstr "Você precisa selecionar um roteiro"
+msgstr "Es necesario selecionar un itinerario"
 
 #: ../inc/artguides/artguides.php:239
 msgid "This artwork is already part of the selected guide"
-msgstr "Esta obra já faz parte deste roteiro"
+msgstr "Este trabajo ya está en el itinerario selecionado"
 
 #: ../inc/artguides/artguides.php:242
 msgid "The selected artwork has been added to your artguide!"
-msgstr "A obra selecionada foi adicionada ao seu roteiro!"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:250
 msgid "Artwork has been removed from this art guide"
-msgstr "Obra removida do roteiro"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:488 ../inc/artists/artists.php:613
 msgid "Are you sure?"
-msgstr "Você tem certeza?"
+msgstr "¿Está seguro?"
 
 #: ../inc/artguides/artguides.php:489 ../inc/artists/artists.php:614
 #: ../inc/artworks/artworks.php:69
 msgid "Sending data..."
-msgstr "Enviando dados..."
+msgstr "Enviando dados…"
 
 #: ../inc/artguides/artguides.php:495
 msgid "My OER collections"
-msgstr "Minha coleção de OERs"
+msgstr "Mis colecciónes de REAS"
 
 #: ../inc/artguides/artguides.php:497
 msgid "Create OER collection"
-msgstr "Criar coleção de OERs"
+msgstr "Crear colección de REA"
 
 #: ../inc/artguides/artguides.php:527
 msgid "Remove this artwork from the art guide"
-msgstr "Remover obra deste roteiro"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:527 ../inc/artists/artists.php:682
 #: ../inc/artworks/artworks.php:543 ../inc/artworks/artworks.php:1209
 msgid "Remove"
-msgstr "Remover"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:533 ../inc/artists/artists.php:688
 msgid "Visit"
-msgstr "Visitar"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:535 ../inc/artists/artists.php:690
 msgid "Visit/edit"
-msgstr "Visitar/editar"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:549
 msgid "Permanently delete this art guide"
-msgstr "Remover deste roteiro permanentemente"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:549 ../inc/artists/artists.php:704
 msgid "Delete"
-msgstr "Deletar"
+msgstr "Eliminar"
 
 #: ../inc/artguides/artguides.php:561
 msgid "Title"
@@ -529,11 +529,11 @@ msgstr "Título"
 
 #: ../inc/artguides/artguides.php:562
 msgid "Description"
-msgstr "Descrição"
+msgstr "Descripción"
 
 #: ../inc/artguides/artguides.php:565
 msgid "Create"
-msgstr "Criar"
+msgstr "Crear"
 
 #: ../inc/artguides/artguides.php:566 ../inc/artguides/artguides.php:593
 #: ../inc/artguides/artguides.php:607 ../inc/artists/artists.php:646
@@ -544,37 +544,37 @@ msgstr "Cancelar"
 #: ../inc/artguides/artguides.php:578 ../inc/artists/artists.php:629
 #, php-format
 msgid "Add &ldquo;%s&rdquo; to:"
-msgstr "Adicionar &ldquo;%s&rdquo; ao:"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:584
 msgid "My art guides"
-msgstr "Meus roteiros"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:592
 msgid "Add artwork"
-msgstr "Adicionar obra"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:606
 msgid "Create and add artwork"
-msgstr "Criar e adicionar obra"
+msgstr ""
 
 #: ../inc/artguides/artguides.php:643 ../inc/artists/artists.php:737
 msgid "Double-click to edit..."
-msgstr "Clique duas vezes para editar..."
+msgstr "Haga doble clic para editar"
 
 #: ../inc/artguides/artguides.php:644 ../inc/artists/artists.php:738
 msgid "Saving..."
-msgstr "Salvando..."
+msgstr "Guardando…"
 
 #: ../inc/artguides/artguides.php:659 ../inc/artguides/artguides.php:672
 #: ../inc/artguides/artguides.php:686 ../inc/artists/artists.php:753
 #: ../inc/artists/artists.php:766 ../inc/artists/artists.php:780
 msgid "Double-click to edit"
-msgstr "Clique duas vezes para editar"
+msgstr "Haga doble clic para editar"
 
 #: ../inc/artguides/artguides.php:694 ../inc/artists/artists.php:788
 msgid "Missing post id"
-msgstr "Faltando ID do objeto"
+msgstr ""
 
 #: ../inc/artguides/templates/archive.php:10
 #: ../inc/artguides/templates/archive.php:30
@@ -587,21 +587,21 @@ msgstr "por"
 #: ../inc/artguides/templates/archive.php:12
 #: ../inc/artists/templates/archive.php:9
 msgid "Search results for:"
-msgstr "Resultados da busca por:"
+msgstr ""
 
 #: ../inc/artguides/templates/archive.php:14
 msgid "Collaborative guides through the public art"
-msgstr "Guias colaborativos pela arte pública"
+msgstr ""
 
 #: ../inc/artguides/templates/archive.php:16
 msgid "Create an art guide"
-msgstr "Criar roteiro"
+msgstr "Criar itinerario"
 
 #: ../inc/artguides/templates/archive.php:31
 #: ../inc/artguides/templates/archive.php:128
 #: ../inc/artguides/templates/single.php:17
 msgid "added"
-msgstr "adicionado"
+msgstr "añadido"
 
 #: ../inc/artguides/templates/archive.php:32
 #: ../inc/artguides/templates/archive.php:129
@@ -618,7 +618,7 @@ msgstr[1] "%s obras"
 #: ../inc/artists/templates/archive.php:54 ../inc/artworks/artworks.php:540
 #: ../inc/artworks/artworks.php:1206 ../inc/featured.php:33
 msgid "Featured"
-msgstr "Destaque"
+msgstr "Destaques"
 
 #: ../inc/artguides/templates/archive.php:103
 #: ../inc/artguides/templates/single.php:16
@@ -632,12 +632,12 @@ msgstr[1] "%s visualizações"
 #: ../inc/artguides/templates/archive.php:118
 #: ../inc/artists/templates/archive.php:111
 msgid "Recently published"
-msgstr "Publicados recentemente"
+msgstr "Recientemente publicado"
 
 #: ../inc/artguides/templates/single.php:28
 #: ../inc/artists/templates/single.php:51
 msgid "OERs"
-msgstr "OERs"
+msgstr "REAs"
 
 #: ../inc/artists/artists.php:58 ../inc/artworks/artworks.php:224
 msgid "Country"
@@ -645,11 +645,11 @@ msgstr "País"
 
 #: ../inc/artists/artists.php:59
 msgid "Add country"
-msgstr "Adicionar país"
+msgstr "Añadir país"
 
 #: ../inc/artists/artists.php:60
 msgid "Add new country"
-msgstr "Adicionar novo país"
+msgstr "Añadir nuevo país"
 
 #: ../inc/artists/artists.php:61
 msgid "Edit country"
@@ -657,7 +657,7 @@ msgstr "Editar país"
 
 #: ../inc/artists/artists.php:62
 msgid "New country"
-msgstr "Novo país"
+msgstr "Nuevo país"
 
 #: ../inc/artists/artists.php:63
 msgid "View country"
@@ -669,11 +669,11 @@ msgstr "Buscar países"
 
 #: ../inc/artists/artists.php:65
 msgid "No country found"
-msgstr "Nenhum país foi encontrado"
+msgstr "No se han encontrado países"
 
 #: ../inc/artists/artists.php:66
 msgid "No country found in the trash"
-msgstr "Nenhum país foi encontrado na lixeira"
+msgstr "No se han encontrado países en la papelera"
 
 #: ../inc/artists/artists.php:119
 msgid "Artist age"
@@ -697,39 +697,39 @@ msgstr ""
 
 #: ../inc/artists/artists.php:278
 msgid "You need to select a country"
-msgstr "Você precisa selecionar um país"
+msgstr "Es necesario selecionar un país"
 
 #: ../inc/artists/artists.php:286
 msgid "This OER is already part of the selected country"
-msgstr "Esta OER já faz parte do país selecionado"
+msgstr "Este REA ya está en el país selecionado"
 
 #: ../inc/artists/artists.php:289
 msgid "The selected OER has been added to this country!"
-msgstr "A OER selecionada foi adicionada ao país!"
+msgstr "La REA seleccionado se ha añadido a este país!"
 
 #: ../inc/artists/artists.php:297
 msgid "Country has been deleted"
-msgstr "País foi deletado"
+msgstr "El país ha sido borrado"
 
 #: ../inc/artists/artists.php:305
 msgid "OER has been removed from this country"
-msgstr "OER foi removida deste país"
+msgstr "Eliminar este REA del país"
 
 #: ../inc/artists/artists.php:645
 msgid "Add OER"
-msgstr "Adicionar OER"
+msgstr "Añadir REA"
 
 #: ../inc/artists/artists.php:661
 msgid "Register country"
-msgstr "Vincular OER"
+msgstr "Registrar país"
 
 #: ../inc/artists/artists.php:682
 msgid "Remove this OER from the country"
-msgstr "Remover OER deste país"
+msgstr "Eliminar este REA del país"
 
 #: ../inc/artists/artists.php:704
 msgid "Permanently delete this country"
-msgstr "Remover país permanentemente"
+msgstr "Eliminar permanentemente este país"
 
 #: ../inc/artists/templates/single.php:20
 msgid "years old"
@@ -746,50 +746,50 @@ msgstr ""
 #: ../inc/artists/templates/single.php:32
 #: ../inc/artists/templates/single.php:63 ../inc/artworks/artworks.php:280
 msgid "Videos"
-msgstr "Vídeos"
+msgstr "Videos"
 
 #: ../inc/artists/templates/single.php:34
 #: ../inc/artists/templates/single.php:77 ../single.php:54 ../single.php:156
 msgid "Comments"
-msgstr "Comentários"
+msgstr "Comentarios"
 
 #: ../inc/artists/templates/single.php:62
 #: ../inc/artists/templates/single.php:76 ../single.php:116 ../single.php:155
 msgid "Close"
-msgstr "Fechar"
+msgstr "Cerrar"
 
 #: ../inc/artworks/artworks.php:70
 msgid "Crunching..."
-msgstr "Finalizando..."
+msgstr ""
 
 #: ../inc/artworks/artworks.php:93 ../inc/artworks/artworks.php:107
 #: ../single.php:106
 msgid "Styles"
-msgstr "Estilos"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:94
 msgid "Style"
-msgstr "Estilo"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:95
 msgid "Search styles"
-msgstr "Buscar estilos"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:96
 msgid "Popular styles"
-msgstr "Estilos populares"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:97
 msgid "All styles"
-msgstr "Todos os estilos"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:98
 msgid "Parent style"
-msgstr "Estilo pai"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:99
 msgid "Parent style:"
-msgstr "Estilo pai:"
+msgstr ""
 
 #: ../inc/artworks/artworks.php:100
 msgid "Edit style"
@@ -797,45 +797,45 @@ msgstr "Editar estilo"
 
 #: ../inc/artworks/artworks.php:101
 msgid "Update style"
-msgstr "Atualizar estilo"
+msgstr "Actualizar estilo"
 
 #: ../inc/artworks/artworks.php:102
 msgid "Add new style"
-msgstr "Adicionar novo estilo"
+msgstr "Añadir nuevo estilo"
 
 #: ../inc/artworks/artworks.php:103
 msgid "New style name"
-msgstr "Novo nome de estilo"
+msgstr "Nombre de nuevo estilo"
 
 #: ../inc/artworks/artworks.php:104
 msgid "Separate styles with commas"
-msgstr "Separar estilos com vírgulas"
+msgstr "Separe estilos con comas"
 
 #: ../inc/artworks/artworks.php:105
 msgid "Add or remove styles"
-msgstr "Adicionar ou remover estilos"
+msgstr "Añadir o eliminar estilos"
 
 #: ../inc/artworks/artworks.php:106
 msgid "Choose from most used styles"
-msgstr "Escolher entre os estilos mais utilizados"
+msgstr "Elija entre los estilos más usados"
 
 #: ../inc/artworks/artworks.php:174 ../inc/artworks/artworks.php:290
 #: ../inc/artworks/artworks.php:498
 msgid "Links"
-msgstr "Links"
+msgstr "Vinculos"
 
 #: ../inc/artworks/artworks.php:184
 msgid "URL and contact"
-msgstr "URL e contato"
+msgstr "URL y contacto"
 
 #: ../inc/artworks/artworks.php:194
 msgid "Place"
-msgstr "Local"
+msgstr "Lugar"
 
 #: ../inc/artworks/artworks.php:204 ../inc/artworks/artworks.php:1338
 #: ../inc/artworks/artworks.php:1423 ../single.php:90
 msgid "Organizations"
-msgstr "Organizações"
+msgstr "Organizaciones"
 
 #: ../inc/artworks/artworks.php:214 ../inc/artworks/artworks.php:1342
 #: ../inc/artworks/artworks.php:1427
@@ -845,7 +845,7 @@ msgstr "Idiomas"
 #: ../inc/artworks/artworks.php:234 ../inc/artworks/artworks.php:1348
 #: ../inc/artworks/artworks.php:1433
 msgid "Licenses"
-msgstr "Licenças"
+msgstr "Licencias"
 
 #: ../inc/artworks/artworks.php:244 ../inc/artworks/artworks.php:1354
 #: ../inc/artworks/artworks.php:1439 ../single.php:46 ../single.php:117
@@ -855,111 +855,111 @@ msgstr "Recursos"
 #: ../inc/artworks/artworks.php:254 ../inc/artworks/artworks.php:1360
 #: ../inc/artworks/artworks.php:1445
 msgid "Input and output"
-msgstr "Input e output"
+msgstr "Entrada y salida"
 
 #: ../inc/artworks/artworks.php:499
 msgid "Add link"
-msgstr "Adicionar link"
+msgstr "Añadir vinculo"
 
 #: ../inc/artworks/artworks.php:523
 msgid "Link title"
-msgstr "Título do link"
+msgstr "Título del vinculo"
 
 #: ../inc/artworks/artworks.php:525
 msgid "Link title (English)"
-msgstr "Título do link (Inglês)"
+msgstr "Título del vinculo (Inglés)"
 
 #: ../inc/artworks/artworks.php:526
 msgid "Link title (Spanish)"
-msgstr "Título do link (Espanhol)"
+msgstr "Título del vinculo (Español)"
 
 #: ../inc/artworks/artworks.php:527
 msgid "Link title (Portuguese)"
-msgstr "Título do link (Português)"
+msgstr "Título del vinculo (Portugués)"
 
 #: ../inc/artworks/artworks.php:529
 msgid "Link URL"
-msgstr "URL do link"
+msgstr "URL del vinculo"
 
 #: ../inc/artworks/artworks.php:531
 msgid "Link url"
-msgstr "URL do link"
+msgstr "URL del vinculo"
 
 #: ../inc/artworks/artworks.php:533
 msgid "Link description"
-msgstr "Descrição"
+msgstr "Descripción del vinculo"
 
 #: ../inc/artworks/artworks.php:535
 msgid "Link description (English)"
-msgstr "Descrição do link (Inglês)"
+msgstr "Descripción del vinculo (Inglés)"
 
 #: ../inc/artworks/artworks.php:536
 msgid "Link description (Spanish)"
-msgstr "Descrição do link (Espanhol)"
+msgstr "Descripción del vinculo (Español)"
 
 #: ../inc/artworks/artworks.php:537
 msgid "Link description (Portuguese)"
-msgstr "Descrição do link (Português)"
+msgstr "Descripción del vinculo (Portugués)"
 
 #: ../inc/artworks/artworks.php:573
 msgid "URL of the initiative"
-msgstr "URL da iniciativa"
+msgstr "URL de la iniciativa"
 
 #: ../inc/artworks/artworks.php:574
 msgid "Initiative contact"
-msgstr "Contato da iniciativa"
+msgstr "Contacto de la iniciativa"
 
 #: ../inc/artworks/artworks.php:600
 msgid "City (English)"
-msgstr "Cidade (Inglês)"
+msgstr "Ciudad (Inglés)"
 
 #: ../inc/artworks/artworks.php:601
 msgid "City (Spanish)"
-msgstr "Cidade (Espanhol)"
+msgstr "Ciudad (Español)"
 
 #: ../inc/artworks/artworks.php:602
 msgid "City (Portuguese)"
-msgstr "Cidade (Português)"
+msgstr "Ciudad (Portugués)"
 
 #: ../inc/artworks/artworks.php:616 ../inc/artworks/artworks.php:1334
 #: ../inc/artworks/artworks.php:1419 ../inc/geolocator/geolocator.php:71
 #: ../single.php:88
 msgid "City"
-msgstr "Cidade"
+msgstr "Ciudad"
 
 #: ../inc/artworks/artworks.php:639 ../inc/artworks/artworks.php:672
 #: ../inc/artworks/artworks.php:673 ../single.php:89
 msgid "Organization"
-msgstr "Organização"
+msgstr "Organización"
 
 #: ../inc/artworks/artworks.php:641
 msgid "Organization (English)"
-msgstr "Organização (Inglês)"
+msgstr "Organización (Inglés)"
 
 #: ../inc/artworks/artworks.php:642
 msgid "Organization (Spanish)"
-msgstr "Organização (Espanhol)"
+msgstr "Organización (Español)"
 
 #: ../inc/artworks/artworks.php:643
 msgid "Organization (Portuguese)"
-msgstr "Organização (Português)"
+msgstr "Organización (Portugués)"
 
 #: ../inc/artworks/artworks.php:645 ../inc/artworks/artworks.php:676
 #: ../inc/artworks/artworks.php:677
 msgid "Organizations/Collaborators"
-msgstr "Organizações/Colaboradores"
+msgstr "Organizaciones/Colaboradores"
 
 #: ../inc/artworks/artworks.php:647
 msgid "Organizations/Collaborators (English)"
-msgstr "Organizações/Colaboradores (Inglês)"
+msgstr "Organizaciones/Colaboradores (Inglés)"
 
 #: ../inc/artworks/artworks.php:648
 msgid "Organizations/Collaborators (Spanish)"
-msgstr "Organizações/Colaboradores (Espanhol)"
+msgstr "Organizaciones/Colaboradores (Español)"
 
 #: ../inc/artworks/artworks.php:649
 msgid "Organizations/Collaborators (Portuguese)"
-msgstr "Organizações/Colaboradores (Português)"
+msgstr "Organizaciones/Colaboradores (Portugués)"
 
 #: ../inc/artworks/artworks.php:651 ../inc/artworks/artworks.php:680
 #: ../inc/artworks/artworks.php:681 ../single.php:91
@@ -968,59 +968,59 @@ msgstr "Financiadores"
 
 #: ../inc/artworks/artworks.php:653
 msgid "Funders (English)"
-msgstr "Financiadores (Inglês)"
+msgstr "Financiadores (Inglés)"
 
 #: ../inc/artworks/artworks.php:654
 msgid "Funders (Spanish)"
-msgstr "Financiadores (Espanhol)"
+msgstr "Financiadores (Español)"
 
 #: ../inc/artworks/artworks.php:655
 msgid "Funders (Portuguese)"
-msgstr "Financiadores (Português)"
+msgstr "Financiadores (Portugués)"
 
 #: ../inc/artworks/artworks.php:721 ../single.php:92
 msgid "Interface languages"
-msgstr "Idiomas da interface"
+msgstr "Idioma de interface"
 
 #: ../inc/artworks/artworks.php:734 ../single.php:93
 msgid "Resource languages"
-msgstr "Idiomas dos recursos"
+msgstr "Idiomas de recurso"
 
 #: ../inc/artworks/artworks.php:779 ../single.php:94
 msgid "Site license"
-msgstr "Licença do site"
+msgstr "Licencia de sitio"
 
 #: ../inc/artworks/artworks.php:794 ../single.php:95
 msgid "Resource license"
-msgstr "Licença dos recursos"
+msgstr "Licencia de recursos"
 
 #: ../inc/artworks/artworks.php:843
 msgid "Types of resources/ Media type"
-msgstr "Tipos de recursos/ Tipo de mídia"
+msgstr "Tipos de recursos/ Tipos de medios"
 
 #: ../inc/artworks/artworks.php:858 ../single.php:97
 msgid "Academic level"
-msgstr "Nível acadêmico"
+msgstr "Nivel académico"
 
 #: ../inc/artworks/artworks.php:873
 msgid "Subject area/ Areas of knowledge"
-msgstr "Disciplina/ Áreas de conhecimento"
+msgstr "Área temática/ Áreas de conocimiento"
 
 #: ../inc/artworks/artworks.php:929
 msgid "Output Interfaces"
-msgstr "Output Interfaces"
+msgstr "Interfaces de salida"
 
 #: ../inc/artworks/artworks.php:936 ../single.php:100
 msgid "Input by users"
-msgstr "Input dos usuários"
+msgstr "Entrada de los usuarios"
 
 #: ../inc/artworks/artworks.php:980 ../single.php:101
 msgid "Collections"
-msgstr "Coleções"
+msgstr "Collecciones"
 
 #: ../inc/artworks/artworks.php:981 ../single.php:102
 msgid "Site accessibility"
-msgstr "Acessibilidade do site"
+msgstr "Accessibilidad del sitio"
 
 #: ../inc/artworks/artworks.php:982 ../single.php:103
 msgid "Site time markers"
@@ -1028,11 +1028,11 @@ msgstr ""
 
 #: ../inc/artworks/artworks.php:1083
 msgid "Select a category"
-msgstr "Selecione uma categoria"
+msgstr "Seleccione una categoría"
 
 #: ../inc/artworks/artworks.php:1127
 msgid "Select a country"
-msgstr "Selecione um país"
+msgstr "Seleccione un país"
 
 #: ../inc/artworks/artworks.php:1176
 msgid "Images"
@@ -1040,23 +1040,23 @@ msgstr "Imagens"
 
 #: ../inc/artworks/artworks.php:1177
 msgid "Add image"
-msgstr "Adicionar imagem"
+msgstr "Añadir imagen"
 
 #: ../inc/artworks/artworks.php:1202
 msgid "Image title"
-msgstr "Título"
+msgstr "Título de imagen"
 
 #: ../inc/artworks/artworks.php:1203
 msgid "Image file"
-msgstr "Arquivo"
+msgstr "Archivo de imagen"
 
 #: ../inc/artworks/artworks.php:1260
 msgid "Submit an OER suggestion"
-msgstr "Enviar uma sugestão de OER"
+msgstr "Enviar sugerencia de REA"
 
 #: ../inc/artworks/artworks.php:1267
 msgid "Submit new OER suggestion"
-msgstr "Enviar nova sugestão de OER"
+msgstr "Enviar nueva sugerencia de REA"
 
 #: ../inc/artworks/artworks.php:1274
 msgid "Submit"
@@ -1064,129 +1064,130 @@ msgstr "Enviar"
 
 #: ../inc/artworks/artworks.php:1287
 msgid "Title (English)"
-msgstr "Título (Inglês)"
+msgstr "Título (Inglés)"
 
 #: ../inc/artworks/artworks.php:1290
 msgid "Title (Spanish)"
-msgstr "Título (Espanhol)"
+msgstr "Título (Español)"
 
 #: ../inc/artworks/artworks.php:1293
 msgid "Title (Portuguese)"
-msgstr "Título (Português)"
+msgstr "Título (Portugués)"
 
 #: ../inc/artworks/artworks.php:1298
 msgid "Description (English)"
-msgstr "Descrição (Inglês)"
+msgstr "Descripción (Inglés)"
 
 #: ../inc/artworks/artworks.php:1301
 msgid "Description (Spanish)"
-msgstr "Descrição (Espanhol)"
+msgstr "Descripción (Español)"
 
 #: ../inc/artworks/artworks.php:1304
 msgid "Description (Portuguese)"
-msgstr "Descrição (Português)"
+msgstr "Descripción (Portugués)"
 
 #: ../inc/artworks/artworks.php:1319
 msgid "Multimedia"
-msgstr "Multimídia"
+msgstr "Multimedia"
 
 #: ../inc/artworks/artworks.php:1330 ../single.php:87
 msgid "Contact"
-msgstr "Contato"
+msgstr "Contacto"
 
 #: ../inc/artworks/artworks.php:1387 ../searchform.php:4
 msgid "Advanced search"
-msgstr "Busca avançada"
+msgstr "Búsqueda avanzada"
 
 #: ../inc/artworks/artworks.php:1394
 msgid "Search"
-msgstr "Buscar"
+msgstr "Búsqueda"
 
 #: ../inc/artworks/artworks.php:1406
 msgid "Keyword"
-msgstr "Palavra-chave"
+msgstr "Palabra clave"
 
 #: ../inc/artworks/artworks.php:1559
 msgid "You must enter a title"
-msgstr "Você deve inserir um título"
+msgstr "Usted debe introducir un título"
 
 #: ../inc/artworks/artworks.php:1562
 msgid "You must select a category"
-msgstr "Você deve selecionar uma categoria"
+msgstr "Usted debe seleccionar una categoría"
 
 #: ../inc/artworks/artworks.php:1565
 msgid "You must enter the address/location"
-msgstr "Você deve inserir o endereço/localização"
+msgstr "Usted debe introducir la dirección/ubicacción"
 
 #: ../inc/artworks/artworks.php:1576
 msgid ""
 "Congratulations! Your OER is now pending approval, soon you'll see it here."
 msgstr ""
-"Parabéns! Sua OER está pendente para aprovação, em breve a verá por aqui."
+"¡Felicitaciones! Su REA se encuentra pendiente de aprobación, pronto lo verá "
+"aquí."
 
 #: ../inc/featured.php:47
 msgid "Featured content"
-msgstr "Conteúdo destacado"
+msgstr "Contenido destacado"
 
 #: ../inc/geolocator/geolocator.php:70 ../inc/geolocator/geolocator.php:84
 msgid "Cities"
-msgstr "Cidades"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:72
 msgid "Search cities"
-msgstr "Buscar cidades"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:73
 msgid "Popular cities"
-msgstr "Cidades populares"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:74 ../inc/geolocator/geolocator.php:200
 msgid "All cities"
-msgstr "Todas as cidades"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:75
 msgid "Parent city"
-msgstr "Cidade pai"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:76
 msgid "Parent city:"
-msgstr "Cidade pai:"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:77
 msgid "Edit city"
-msgstr "Editar cidade"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:78
 msgid "Update city"
-msgstr "Atualizar cidade"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:79
 msgid "Add new city"
-msgstr "Adicionar nova cidade"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:80
 msgid "New city name"
-msgstr "Novo nome de cidade"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:81
 msgid "Separate cities with commas"
-msgstr "Separar cidades com vírgulas"
+msgstr ""
 
 #: ../inc/geolocator/geolocator.php:82
 msgid "Add or remove cities"
-msgstr "Adicionar ou remover cidades"
+msgstr "Añadir o eliminar ciudads"
 
 #: ../inc/geolocator/geolocator.php:83
 msgid "Choose from most used cities"
-msgstr "Escolha entre as cidades mais utilizadas"
+msgstr "Elija entre las ciudades más usadas"
 
 #: ../inc/geolocator/geolocator.php:194
 msgid "Select a city"
-msgstr "Selecione uma cidade"
+msgstr "Seleccione una ciudade"
 
 #: ../inc/geolocator/geolocator.php:198
 msgid "Choose another city:"
-msgstr "Escolha outra cidade:"
+msgstr "Elija otra ciudad:"
 
 #: ../loop-carousel.php:27
 msgid "Next"
@@ -1198,11 +1199,11 @@ msgstr "Anterior"
 
 #: ../loop.php:44
 msgid "Sorry, but no posts were found."
-msgstr "Desculpe, mas nenhum post foi encontrado."
+msgstr "No fue posible encontrar posts."
 
 #: ../search.php:11
 msgid "Change search filters"
-msgstr "Alterar filtros de busca"
+msgstr "Cambiar filtos de búsqueda"
 
 #: ../search.php:12
 msgid "Results"
@@ -1210,23 +1211,23 @@ msgstr "Resultados"
 
 #: ../searchform.php:3
 msgid "Search and hit enter"
-msgstr "Digite e pressione enter"
+msgstr "Escriba y presione enter"
 
 #: ../single.php:60
 msgid "Dimensions"
-msgstr "Dimensões"
+msgstr ""
 
 #: ../single.php:68
 msgid "Dates"
-msgstr "Datas"
+msgstr ""
 
 #: ../single.php:70
 msgid "Creation"
-msgstr "Criação"
+msgstr ""
 
 #: ../single.php:75
 msgid "Termination"
-msgstr "Término"
+msgstr ""
 
 #: ../single.php:86
 msgid "URL"
@@ -1234,18 +1235,15 @@ msgstr "URL"
 
 #: ../single.php:96
 msgid "Resource types"
-msgstr "Tipos de recurso"
+msgstr "Tipo de recurso"
 
 #: ../single.php:98
 msgid "Subject areas"
-msgstr "Áreas de conhecimento"
+msgstr "Subject areas"
 
 #: ../single.php:99
 msgid "Output interfaces"
 msgstr "Output interfaces"
-
-#~ msgid "Artworks"
-#~ msgstr "Obras"
 
 #~ msgid "Gallery"
 #~ msgstr "Galeria"

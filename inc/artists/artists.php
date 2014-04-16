@@ -275,7 +275,7 @@ class ArteForaDoMuseu_Artists {
 
 		if(!$post_id) {
 			if(isset($_REQUEST['post_id']) && !$_REQUEST['post_id'])
-				$this->ajax_response(array('error_msg' => __('You need to select an country', 'arteforadomuseu')));
+				$this->ajax_response(array('error_msg' => __('You need to select a country', 'arteforadomuseu')));
 			else
 				$post_id = $_REQUEST['post_id'];
 		}
@@ -283,10 +283,10 @@ class ArteForaDoMuseu_Artists {
 		$artwork_id = $_REQUEST['artwork_id'];
 
 		if($this->has_artwork($post_id, $artwork_id))
-			$this->ajax_response(array('error_msg' => __('This artwork is already part of the selected country', 'arteforadomuseu')));
+			$this->ajax_response(array('error_msg' => __('This OER is already part of the selected country', 'arteforadomuseu')));
 
 		$this->add_artwork($post_id, $artwork_id);
-		$this->ajax_response(array('success_msg' => __('The selected artwork has been added to this country!', 'arteforadomuseu') . ' <a href="#" class="close">' . __('Click here to close', 'arteforadomuseu') . '</a>'));
+		$this->ajax_response(array('success_msg' => __('The selected OER has been added to this country!', 'arteforadomuseu') . ' <a href="#" class="close">' . __('Click here to close', 'arteforadomuseu') . '</a>'));
 	}
 
 	function ajax_delete() {
@@ -302,7 +302,7 @@ class ArteForaDoMuseu_Artists {
 			$this->ajax_response(array('error_msg' => __('You are not allowed to do that', 'arteforadomuseu')));
 
 		$this->remove_artwork($_REQUEST['post_id'], $_REQUEST['artwork_id']);
-		$this->ajax_response(array('success_msg' => __('Artwork has been removed from this country', 'arteforadomuseu')));
+		$this->ajax_response(array('success_msg' => __('OER has been removed from this country', 'arteforadomuseu')));
 	}
 
 	/*
@@ -642,7 +642,7 @@ class ArteForaDoMuseu_Artists {
 							</select>
 						</div>
 						<div class="form-actions">
-							<input type="submit" value="<?php _e('Add artwork', 'arteforadomuseu'); ?>" />
+							<input type="submit" value="<?php _e('Add OER', 'arteforadomuseu'); ?>" />
 							<a class="close button secondary" href="#"><?php _e('Cancel', 'arteforadomuseu'); ?></a>
 						</div>
 					</form>
@@ -679,7 +679,7 @@ class ArteForaDoMuseu_Artists {
 			<input type="hidden" name="post_id_" value="<?php echo $post_id; ?>" />
 			<input type="hidden" name="post_id" value="<?php echo $post_id; ?>" />
 			<input type="hidden" name="artwork_id" value="<?php echo $artwork_id; ?>" />
-			<button title="<?php _e('Remove this artwork from the country', 'arteforadomuseu'); ?>"><span class="lsf">&#xE10f;</span> <?php _e('Remove', 'arteforadomuseu'); ?></button>
+			<button title="<?php _e('Remove this OER from the country', 'arteforadomuseu'); ?>"><span class="lsf">&#xE10f;</span> <?php _e('Remove', 'arteforadomuseu'); ?></button>
 		</form>
 		<?php
 	}
