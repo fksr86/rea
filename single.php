@@ -85,22 +85,22 @@
 				<div class="post-fields">
 					<?php if ($url) : ?><dd><a class="post-fields-url" href="<?php echo $url; ?>"><?php _e('URL', 'arteforadomuseu'); ?></a></dd><? endif; ?>
 					<?php if ($contact) : ?><dd><a class="post-fields-contact" href="<?php echo $contact; ?>"><?php _e('Contact', 'arteforadomuseu'); ?></a></dd><? endif; ?>					
-					<?php if ($city) : ?><dt><?php _e('City', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($city); ?></dd><? endif; ?>
-					<?php if ($organization) : ?><dt><?php _e('Organization', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($organization); ?></dd><? endif; ?>
-					<?php if ($organizations) : ?><dt><?php _e('Organizations', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($organizations); ?></dd><? endif; ?>
-					<?php if ($funders) : ?><dt><?php _e('Funders', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($funders); ?></dd><? endif; ?>
+					<?php if ($city && $city[qtrans_getLanguage()] != '') : ?><dt><?php _e('City', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($city); ?></dd><? endif; ?>
+					<?php if ($organization && $organization[qtrans_getLanguage()] != '') : ?><dt><?php _e('Organization', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($organization); ?></dd><? endif; ?>
+					<?php if ($organizations && $organizations[qtrans_getLanguage()] != '') : ?><dt><?php _e('Organizations/Collaborators', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($organizations); ?></dd><? endif; ?>
+					<?php if ($funders && $funders[qtrans_getLanguage()] != '') : ?><dt><?php _e('Funders', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_array($funders); ?></dd><? endif; ?>
 					<?php if ($interface_languages) : ?><dt><?php _e('Interface languages', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_lang($interface_languages); ?></dd><? endif; ?>
 					<?php if ($resource_languages) : ?><dt><?php _e('Resource languages', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_lang($resource_languages); ?></dd><? endif; ?>
 					<?php if ($site_license) : ?><dt><?php _e('Site license', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_lic($site_license); ?></dd><? endif; ?>
 					<?php if ($resource_license) : ?><dt><?php _e('Resource license', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_lic($resource_license); ?></dd><? endif; ?>
 					<?php if ($resource_types) : ?><dt><?php _e('Resource types', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_res($resource_types); ?></dd><? endif; ?>
 					<?php if ($academic_level) : ?><dt><?php _e('Academic level', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_acad($academic_level); ?></dd><? endif; ?>
-					<?php if ($subject_areas) : ?><dt><?php _e('Subject areas', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_subj($subject_areas); ?></dd><? endif; ?>
+					<?php if ($subject_areas) : ?><dt><?php _e('Subject areas', 'arteforadomuseu'); ?></dt><dd><?php if(is_array($subject_areas)) echo mira_lang_vocab_subj($subject_areas); else echo $subject_areas; ?></dd><? endif; ?>
 					<?php if ($output_interfaces) : ?><dt><?php _e('Output interfaces', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_out($output_interfaces); ?></dd><? endif; ?>
 					<?php if ($input_by_users) : ?><dt><?php _e('Input by users', 'arteforadomuseu'); ?></dt><dd><?php echo mira_lang_vocab_in($input_by_users); ?></dd><? endif; ?>
 					<?php if ($collections) : ?><dt><?php _e('Collections', 'arteforadomuseu'); ?></dt><dd><?php echo $collections; ?></dd><? endif; ?>
 					<?php if ($site_accessibility) : ?><dt><?php _e('Site accessibility', 'arteforadomuseu'); ?></dt><dd><?php echo $site_accessibility; ?></dd><? endif; ?>
-					<?php if ($site_time_markers) : ?><dt><?php _e('Site time markers', 'arteforadomuseu'); ?></dt><dd><?php echo $site_time_markers; ?></dd><? endif; ?>
+					<?php if ($site_time_markers) : ?><dt><?php _e('Start year–End year (if ended)', 'arteforadomuseu'); ?></dt><dd><?php echo $site_time_markers; ?></dd><? endif; ?>
 				</div>
 				</dl>
 				<?php the_terms($post->ID, 'style', '<p class="styles"><span class="lsf">&#xE128;</span> ' . __('Styles', 'arteforadomuseu') . ': ', ' ', '</p>'); ?>

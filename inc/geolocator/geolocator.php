@@ -29,7 +29,7 @@ class ArteForaDoMuseu_Geolocator {
 
 		$this->register_taxonomy();
 
-		$this->queries();
+		// $this->queries();
 
 		$this->setup_cookies();
 
@@ -115,51 +115,51 @@ class ArteForaDoMuseu_Geolocator {
 	 * If no city was found, set a query var and return all cities results
 	 */
 
-	function queries() {
+	// function queries() {
 
-		global $wp;
-		$wp->add_query_var('city_not_found');
-		$wp->add_query_var('not_geo_query');
+	// 	global $wp;
+	// 	$wp->add_query_var('city_not_found');
+	// 	$wp->add_query_var('not_geo_query');
 
-		add_action('pre_get_posts', array($this, 'geo_wp_query'));
+	// 	add_action('pre_get_posts', array($this, 'geo_wp_query'));
 
-	}
+	// }
 
-	function geo_wp_query($query) {
+	// function geo_wp_query($query) {
 
-		if($this->is_geo_query($query)) {
+	// 	if($this->is_geo_query($query)) {
 
-			$city = $this->get_user_city();
+	// 		$city = $this->get_user_city();
 
-			if($city) {
+	// 		if($city) {
 
-				$city_term = get_term_by('name', $city, 'city');
+	// 			$city_term = get_term_by('name', $city, 'city');
 
-				if(!$city_term) {
-					$query->set('city_not_found', 1);
-					return $query;
-				}
+	// 			if(!$city_term) {
+	// 				$query->set('city_not_found', 1);
+	// 				return $query;
+	// 			}
 
-				$query->set('city', $city_term->slug);
+	// 			$query->set('city', $city_term->slug);
 
-				remove_action('pre_get_posts', array($this, 'geo_wp_query'));
+	// 			remove_action('pre_get_posts', array($this, 'geo_wp_query'));
 
-				$have_posts = get_posts($query->query_vars);
+	// 			$have_posts = get_posts($query->query_vars);
 
-				add_action('pre_get_posts', array($this, 'geo_wp_query'));
+	// 			add_action('pre_get_posts', array($this, 'geo_wp_query'));
 
-				if(!$have_posts) {
-					$query->set('city', null);
-					$query->set('city_not_found', 1);
-				}
+	// 			if(!$have_posts) {
+	// 				$query->set('city', null);
+	// 				$query->set('city_not_found', 1);
+	// 			}
 
-			}
+	// 		}
 
-		}
+	// 	}
 
-		return $query;
+	// 	return $query;
 
-	}
+	// }
 
 	/*
 	 * Verify if the query is returning city results

@@ -117,8 +117,8 @@ function afdm_get_user_menu() {
 function afdm_city_not_found_message() {
 	global $wp_query;
 	if(get_query_var('city_not_found')) {
-		?>
-		<!-- <div class="content-message">
+		/*?>
+		<div class="content-message">
 			<p>
 				<?php _e('We couldn\'t find anything for your city.', 'arteforadomuseu'); ?><br />
 				<?php _e('Showing all cities results', 'arteforadomuseu'); ?>
@@ -128,8 +128,8 @@ function afdm_city_not_found_message() {
 			<?php } else { ?>
 				<p><a href="#"><?php _e('Login to submit an OER!', 'arteforadomuseu'); ?></a></p>
 			<?php } ?>
-		</div> -->
-		<?php
+		</div>
+		<?php */
 	}
 }
 

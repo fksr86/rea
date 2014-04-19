@@ -51,9 +51,6 @@
 					</h1>
 				</div>
 			</div>
-			<div class="two columns">
-				<?php afdm_city_selector(); ?>
-			&nbsp;</div> 
 			<div class="main-menu">
 			<?php if(function_exists('qtrans_getLanguage')) : ?>
 					<nav id="langnav">

@@ -168,7 +168,7 @@ jQuery(function($) {
 			jeo.mapReady(function(map) {
 				var geolocator = afdmGeolocator();
 				geolocator.geolocated(function() {
-					geolocator.centerMap('city', map);
+					// geolocator.centerMap('city', map);
 				});
 			});
 		}

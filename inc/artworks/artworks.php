@@ -594,6 +594,10 @@ class ArteForaDoMuseu_Artworks {
 
 	function box_artwork_place($post = false) {
 
+		if($post) {
+			$city = $this->get_artwork_city();
+		}
+
 		?>
 		<div id="artwork_place_box" class="loop-box">
 			<div class="box-inputs">
@@ -875,21 +879,7 @@ class ArteForaDoMuseu_Artworks {
 			</div>
 			<div class="one-third-2">
 				<h4><?php _e('Subject area/ Areas of knowledge', 'arteforadomuseu'); ?></h4>
-				<ul class="input-container subject-areas main-input">
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('philosophy', $subject_areas)) echo "checked"; ?> value="philosophy" /><?php _e('Philosophy', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('sociology', $subject_areas)) echo "checked"; ?> value="sociology" /><?php _e('Sociology', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('geography', $subject_areas)) echo "checked"; ?> value="geography" /><?php _e('Geography', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('history', $subject_areas)) echo "checked"; ?> value="history" /><?php _e('History', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('biology', $subject_areas)) echo "checked"; ?> value="biology" /><?php _e('Biology', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('science', $subject_areas)) echo "checked"; ?> value="science" /><?php _e('Science', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('chemistry', $subject_areas)) echo "checked"; ?> value="chemistry" /><?php _e('Chemistry', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('physics', $subject_areas)) echo "checked"; ?> value="physics" /><?php _e('Physics', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('art', $subject_areas)) echo "checked"; ?> value="art" /><?php _e('Art', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('spanish', $subject_areas)) echo "checked"; ?> value="spanish" /><?php _e('Spanish', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('english', $subject_areas)) echo "checked"; ?> value="english" /><?php _e('English', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('portuguese', $subject_areas)) echo "checked"; ?> value="portuguese" /><?php _e('Portuguese', 'arteforadomuseu'); ?></label></li>
-					<li><label><input type="checkbox" class="subject-areas" name="artwork_subject_areas[]" <?php if((is_array($subject_areas)) && in_array('mathematics', $subject_areas)) echo "checked"; ?> value="mathematics" /><?php _e('Mathematics', 'arteforadomuseu'); ?></label></li>
-				</ul>
+				<textarea name="artwork_subject_areas"><?php if(is_array($subject_areas)) echo implode(', ', $subject_areas); else echo $subject_areas; ?></textarea>
 			</div>
 		</div>
 		<?php
@@ -983,7 +973,7 @@ class ArteForaDoMuseu_Artworks {
 			<div class="box-inputs">
 				<div class="one-third-1"><input type="text" class="collections" size="80" name="artwork_collections" <?php if($collections) echo 'value="' . $collections . '"'; ?> placeholder="<?php _e('Collections', 'arteforadomuseu'); ?>" /></div>
 				<div class="one-third-1"><input type="text" class="site-accessibility" size="80" name="artwork_site_accessibility" <?php if($site_accessibility) echo 'value="' . $site_accessibility . '"'; ?> placeholder="<?php _e('Site accessibility', 'arteforadomuseu'); ?>" /></div>
-				<div class="one-third-2"><input type="text" class="site-time-markers" size="80" name="artwork_site_time_markers" <?php if($site_time_markers) echo 'value="' . $site_time_markers . '"'; ?> placeholder="<?php _e('Site time markers', 'arteforadomuseu'); ?>" /></div>
+				<div class="one-third-2"><input type="text" class="site-time-markers" size="80" name="artwork_site_time_markers" <?php if($site_time_markers) echo 'value="' . $site_time_markers . '"'; ?> placeholder="<?php _e('Start year–End year (if ended)', 'arteforadomuseu'); ?>" /></div>
 			</div>
 		</div>
 		<?php
@@ -1126,7 +1116,7 @@ class ArteForaDoMuseu_Artworks {
 		}
 
 		?>
-		<div id="add_artwork_to_artist">
+		<div id="add_country_box">
 			<?php if($artists) : ?>
 				<h4><?php _e('Select a country', 'arteforadomuseu'); ?></h4>
 				<div class="box-inputs">
@@ -1562,11 +1552,8 @@ class ArteForaDoMuseu_Artworks {
 		if(!$data['title_en'] || !$data['title_es'] || !$data['title_pt'])
 			$this->ajax_response(array('error_msg' => __('You must enter a title', 'arteforadomuseu')));
 
-		if(!$data['category_name'])
-			$this->ajax_response(array('error_msg' => __('You must select a category', 'arteforadomuseu')));
-
-		if(!$data['geocode_address'])
-			$this->ajax_response(array('error_msg' => __('You must enter the address/location', 'arteforadomuseu')));
+		if(!$data['artwork_country'])
+			$this->ajax_response(array('error_msg' => __('You must select a country', 'arteforadomuseu')));
 
 		$post_id = wp_insert_post(array(
 			'post_type' => $this->post_type,
@@ -1857,7 +1844,7 @@ function afdm_get_organization($post_id = false) {
 
 function afdm_get_organizations($post_id = false) {
 	global $artworks;
-	return $artworks->get_artwork_organization($post_id);
+	return $artworks->get_artwork_organizations($post_id);
 }
 
 function afdm_get_funders($post_id = false) {

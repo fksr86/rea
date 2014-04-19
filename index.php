@@ -35,14 +35,9 @@
 
 	<?php endif; ?>
 
-	<?php get_template_part('content', 'popular'); ?>
-
 		<?php do_action('afdm_before_content'); ?>
 
 	<div class="child-section">
-		<!-- <div class="section-title">
-			<h2><?php _e('Latest OERs', 'arteforadomuseu'); ?></h2>
-		</div> -->
 		<?php get_template_part('loop'); ?>
 	</div>
 </section>
