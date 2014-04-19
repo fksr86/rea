@@ -110,7 +110,7 @@ class ArteForaDoMuseu_Geolocator {
 		}
 	}
 
-	/*
+	/* REMOVED SO ALL RESULTS ARE ALWAYS SHOWN
 	 * Setup queries
 	 * If no city was found, set a query var and return all cities results
 	 */
