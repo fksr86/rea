@@ -324,7 +324,7 @@ class ArteForaDoMuseu_Artworks {
 
 		if(defined('AFDM_FRONTEND_SUBMIT') && AFDM_FRONTEND_SUBMIT) {
 			jeo_geocode_save($post_id);
-//			$this->save_artwork_styles($post_id);
+			$this->save_artwork_styles($post_id);
 			$this->save_artwork_categories($post_id);
 			$this->save_artwork_images($post_id);
 		}
@@ -1003,7 +1003,7 @@ class ArteForaDoMuseu_Artworks {
 	/*
 	 * Taxonomy boxes, for non-admin dashboard usage only
 	 */
-/*
+
 	function box_artwork_styles($post = false) {
 
 		wp_enqueue_script('jquery-tag-it');
@@ -1057,7 +1057,7 @@ class ArteForaDoMuseu_Artworks {
 		}
 
 	}
-*/
+
 	function box_artwork_categories($post = false) {
 
 		if($post == 'search') {
@@ -1362,6 +1362,9 @@ class ArteForaDoMuseu_Artworks {
 			<div class="clearfix">
 				<?php $this->box_artwork_other($post); ?>
 			</div>
+		</div>
+		<div class="clearfix">
+			<?php $this->box_artwork_styles($post); ?>
 		</div>
 		<div class="clearfix">
 			<?php jeo_geocode_box($post); ?>
@@ -1754,14 +1757,14 @@ class ArteForaDoMuseu_Artworks {
 		return $artists[0]->ID;
 	}
 
-/*	function get_artwork_styles() {
+	function get_artwork_styles() {
 		return false;
 	}
 
 	function get_artwork_style_names() {
 		return false;
 	}
-*/
+
 	function get_artwork_images($post_id = false) {
 		global $post;
 		$post_id = $post_id ? $post_id : $post->ID;

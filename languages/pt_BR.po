@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MIRA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-17 13:24-0300\n"
-"PO-Revision-Date: 2014-04-17 13:26-0300\n"
+"PO-Revision-Date: 2014-04-26 16:04-0300\n"
 "Last-Translator: Miguel Peixe <miguel@cardume.art.br>\n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -370,23 +370,23 @@ msgstr "Output services (API, OAI, SQI, SRU, SPI)"
 
 #: ../functions.php:494 ../inc/artworks/artworks.php:942
 msgid "Contact (form/email)"
-msgstr "Contato"
+msgstr "Contato (formulário/e-mail)"
 
 #: ../functions.php:498 ../inc/artworks/artworks.php:943
 msgid "Join (create account)"
-msgstr "Cadastro"
+msgstr "Cadastro (criar conta)"
 
 #: ../functions.php:502 ../inc/artworks/artworks.php:944
 msgid "Comment (vote, tag)"
-msgstr "Comentário"
+msgstr "Comentário (votar, taguear)"
 
 #: ../functions.php:506 ../inc/artworks/artworks.php:945
 msgid "Contribute (post/moderated post)"
-msgstr "Contribuição"
+msgstr "Contribuição (post/post moderado)"
 
 #: ../functions.php:510 ../inc/artworks/artworks.php:946
 msgid "Community (forums, COP, bulletin boards)"
-msgstr "Comunidade"
+msgstr "Comunidade (fóruns, COP, quadro de avisos)"
 
 #: ../header.php:79 ../inc/artists/templates/archive.php:7
 msgid "Artists"

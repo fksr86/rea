@@ -36,6 +36,7 @@
 		<section id="content" class="single-post">
 			<header class="single-post-header clearfix">
 				<?php the_post_thumbnail('page-featured'); ?>
+				<?php echo get_the_category_list(); ?>
 				<h1><?php the_title(); ?></h1>
 				<?php if(afdm_has_artist()) : ?>
 					<p class="artists"><?php afdm_the_artist(); ?></p>

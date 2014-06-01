@@ -1161,7 +1161,7 @@ input[type=submit].remove:active {
   float: none;
 }
 .displaying-map #content .single-post-header .post-categories li {
-  float: none;
+  float: left;
 }
 .displaying-map #content .single-post-header .post-categories li a {
   background: transparent;
@@ -1169,7 +1169,7 @@ input[type=submit].remove:active {
   color: #999;
 }
 .displaying-map #content .single-post-header h2 {
-  float: none;
+  float: left;
   margin: 0;
   color: #eee;
   text-transform: uppercase;
@@ -1184,6 +1184,7 @@ input[type=submit].remove:active {
   text-decoration: none;
 }
 .displaying-map #content .single-post-header h1 {
+  clear: both;
   float: none;
   color: #f0f0f0;
   font-size: 32px;

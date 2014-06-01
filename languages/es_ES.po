@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: MIRA\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-16 20:42-0300\n"
-"PO-Revision-Date: 2014-04-16 20:57-0300\n"
+"PO-Revision-Date: 2014-04-26 16:09-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -370,23 +370,23 @@ msgstr "Output services (API, OAI, SQI, SRU, SPI)"
 
 #: ../functions.php:494 ../inc/artworks/artworks.php:942
 msgid "Contact (form/email)"
-msgstr "Contacto"
+msgstr "Contacto (formulario/e-mail)"
 
 #: ../functions.php:498 ../inc/artworks/artworks.php:943
 msgid "Join (create account)"
-msgstr "Inscripción"
+msgstr "Inscripción (crear cuenta)"
 
 #: ../functions.php:502 ../inc/artworks/artworks.php:944
 msgid "Comment (vote, tag)"
-msgstr "Comentario"
+msgstr "Comentario (votar/etiquetar)"
 
 #: ../functions.php:506 ../inc/artworks/artworks.php:945
 msgid "Contribute (post/moderated post)"
-msgstr "Contribución"
+msgstr "Contribución (entrada/entrada moderada)"
 
 #: ../functions.php:510 ../inc/artworks/artworks.php:946
 msgid "Community (forums, COP, bulletin boards)"
-msgstr "Comunidad"
+msgstr "Comunidad (fóruns, COP, tablero de anuncios)"
 
 #: ../header.php:79 ../inc/artists/templates/archive.php:7
 msgid "Artists"
